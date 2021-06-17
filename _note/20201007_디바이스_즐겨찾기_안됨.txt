@@ -1,0 +1,47 @@
+20201007 디바이스 즐겨찾기 안됨
+스마트후드 - 추가
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/user/5f6d9a2d10ddc50018653057/device/5f50822bb03ed300188739d0/deviceCategory/favorite' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxOTcwNzkwNDQxIiwibmlja25hbWUiOiLsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE5NzA3OTB9.4TsV23NnRNHOGd9yLCeLwF_6Eg4p8yjrMmJcjTbIcow' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --data-binary '{}' \
+  --compressed
+
+스마트후드 - 삭제
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/user/5f6d9a2d10ddc50018653057/device/5f50822bb03ed300188739d0/deviceCategory/favorite' \
+  -X 'DELETE' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxOTcwNzkwNDQxIiwibmlja25hbWUiOiLsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE5NzA3OTB9.4TsV23NnRNHOGd9yLCeLwF_6Eg4p8yjrMmJcjTbIcow' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --data-binary '{}' \
+  --compressed
+
+LED 핸들 - 추가
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/user/5f6d9a2d10ddc50018653057/device/5f7c29b06dbd150018bec558/deviceCategory/favorite' \
+  -X 'DELETE' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxOTcwNzkwNDQxIiwibmlja25hbWUiOiLsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE5NzA3OTB9.4TsV23NnRNHOGd9yLCeLwF_6Eg4p8yjrMmJcjTbIcow' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --data-binary '{}' \
+  --compressed

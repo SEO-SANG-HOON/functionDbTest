@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Program",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node",
+            "env": {
+                "REDIS_PORT": "6380",
+                "REDIS_WEATHER_DB": "4",
+                "REDIS_PLACE_DB": "3",
+                // dev
+                "DEV_REDIS_HOST": "zinfw-cache-dev.redis.cache.windows.net",
+                "DEV_REDIS_PASSWORD": "aDC2taP6vyxtRbHuvyc2VaHuJzWAt54k3dEmHDjFixI=",
+                "DEV_MONGO_URI": "mongodb://zinfw-db-dev:haYJ4gWbGA8Mj0xLYMhuU3rgHYcFtIzhAtEuZYE4G7jTOh9kcyAmDoPJwqLVgQMsjaEwBYtnkU3ahTiu3agzTw==@zinfw-db-dev.documents.azure.com:10255/?ssl=true",
+                "DEV_DB_NAME": "zinfwdbdev",
+                // prd
+                "PRD_REDIS_HOST": "zinfw-cache.redis.cache.windows.net",
+                "PRD_REDIS_PASSWORD": "R0hmdCgQdqrNL+mwFvs+6bAzMuHArMqwswgZpNJ2498=",
+                "PRD_MONGO_URI": "mongodb://zinfw-db:D5hOAg2T2LsLd2K6imhMqcfTsEtYnAAa5BuGZV9323qF5ohwf9rwRJUt8UaHO40uA00Yn6lSO2lSXMVuIcrzxg==@zinfw-db.documents.azure.com:10255/zinfwdb?ssl=true&replicaSet=globaldb",
+                "PRD_DB_NAME": "zinfwdb"
+            }
+        }
+    ]
+}

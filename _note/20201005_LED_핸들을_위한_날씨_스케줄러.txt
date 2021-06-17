@@ -1,0 +1,16 @@
+20201005 led 핸들을 위한 날씨 스케줄러
+
+날씨 조회
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/weather?placeId=5f4ddb9f3e4e300018e3b772' \
+curl 'http://localhost:3001/api/v1/weather?placeId=5f4ddb9f3e4e300018e3b772' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRkZGI4YTQwM2I2NTAwMTgzOWNhYzMiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMTg4ODc0NjYwMSIsIm5pY2tuYW1lIjoiSllTIDEyOSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMTg4ODc0Nn0.PBescRv0_xYG-FUuKuRY_IOfUK6PpTOFH6gWqeeK_pA' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=utf-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --compressed | jq

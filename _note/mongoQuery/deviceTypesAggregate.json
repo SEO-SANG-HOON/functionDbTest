@@ -1,0 +1,15 @@
+db.getCollection('deviceTypes').aggregate([
+	{
+		$match: {}
+	},
+       	{
+		$addFields: {
+			deviceParentModel: '$device.parentModel',
+			deviceType: '$device.type',
+                        manufacturer: '$device.manufacturer'
+		}
+	},
+        {
+		$sort: {manufacturer:-1, deviceType : -1}
+	}
+])

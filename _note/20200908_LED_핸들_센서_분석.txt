@@ -1,0 +1,160 @@
+5f4ddda5403b65001839cacb
+5f5092c6b03ed30018873a08
+
+전원/제어/센서
+디바이스 (실내정보)
+제어		닫힘/열림		sensor.doorStatus : "open"
+전원		베터리상태		sensor.power.batteryUsage : 73
+전원		전원 on/off		sensor.power.status : "?"
+센서		온도			sensor.airCondition.temperature : 26
+센서		습도			sensor.airCondition.humidity : 69
+센서		VOCs			sensor.airCondition.tvocs : 60.79
+센서		CO2 농도		sensor.airCondition.co2 : 250
+센서		공기상태		sensor.alarm.airGuide : "HCN01"
+센서		?			sensor.alarm.iaqGuide : "IAQ01"
+
+실외정보
+센서		초미세먼지		sensor.weather.pm2_5 :
+센서		미세먼지		sensor.weather.pm10 :
+센서					sensor.weather.temperature.highest :
+센서					sensor.weather.temperature.present :
+센서					sensor.weather.temperature.lowest :
+센서					sensor.weather.present.sky :
+센서					sensor.weather.present.pty :
+센서					sensor.weather.forecast.sky :
+센서					sensor.weather.forecast.pty :
+
+/* 1 */
+{
+	"_id" : ObjectId("5f4ddda5403b65001839cacb"),
+	"ownerId" : "5f43418dfc79a400189baf48",
+	"ownerUserCode" : "11722362",
+	"placeId" : "5f4cd00305595f0018ce3bcd",
+	"roomId" : "000000000000000000000000",
+	"accessibles" : [ 
+		"5f43418dfc79a400189baf48"
+	],
+	"isActivate" : true,
+	"createdAt" : ISODate("2020-09-01T05:35:33.526Z"),
+	"lastUpdatedAt" : ISODate("2020-09-04T08:03:27.512Z"),
+	"device" : {
+		"firmware" : {
+			"mcu" : {
+				"version" : "0.2.1",
+				"url" : "",
+				"fileName" : "",
+				"lastUpdated" : "",
+				"result" : ""
+			},
+			"modem" : {
+				"version" : "0.9.6.4",
+				"url" : "",
+				"fileName" : "",
+				"lastUpdated" : "",
+				"result" : ""
+			}
+		},
+		"apInfo" : {
+			"ssid" : "",
+			"password" : "",
+			"ipv4" : "",
+			"port" : ""
+		},
+		"parentModel" : "LGH_LEDHANDLE",
+		"category" : "CATEGORY_4",
+		"type" : "LGH_LEDHANDLE2020A",
+		"name" : "LED 핸들",
+		"description" : "LED 핸들 LGH_LEDHANDLE2020A",
+		"deviceId" : "5f4ddda5403b65001839cacb",
+		"deviceType" : "",
+		"connType" : "wifi",
+		"macAddr" : "bcddc2113a87",
+		"serialNo" : "LGH-LEDHANDLE_00001",
+		"powerType" : "baterry",
+		"manufacturer" : "",
+		"power" : "battery",
+		"manufacture" : "LGHausys"
+	},
+"sensor" : {
+"power" : {
+	"batteryUsage" : 73,
+	"status" : ""
+},
+"alarm" : {
+	"airGuide" : "HCN01",
+	"iaqGuide" : "IAQ01"
+},
+"airCondition" : {
+	"temperature" : 26,
+	"humidity" : 69,
+	"tvocs" : 60.7960968017578,
+	"co2" : 250
+},
+"weather" : {
+	"temperature" : {
+	"highest" : "",
+	"present" : "",
+	"lowest" : ""
+	},
+	"present" : {
+	"sky" : "",
+	"pty" : ""
+	},
+	"forecast" : {
+	"sky" : "",
+	"pty" : ""
+	},
+	"pm2_5" : "",
+	"pm10" : ""
+},
+"doorStatus" : "open"
+},
+	"link" : {
+		"autoMode" : "off",
+		"targetDeviceId" : ""
+	},
+	"linked" : {
+		"sourceDeviceId" : ""
+	},
+	"trigger" : [ 
+		{
+			"push" : {
+				"enumList" : {
+					"HCN11" : "HCN11 경고",
+					"HCN12" : "HCN12 경고",
+					"HCN13" : "HCN14 경고"
+				},
+				"type" : "enum"
+			},
+			"attr" : "sensor.alarm.airGuide",
+			"isPush" : true,
+			"category" : "CATEGORY_1"
+		}, 
+		{
+			"push" : {
+				"enumList" : {
+					"IAQ01" : "IAQ01 경고",
+					"IAQ02" : "IAQ02 경고",
+					"IAQ03" : "IAQ03 경고",
+					"IAQ04" : "IAQ04 경고"
+				},
+				"type" : "enum"
+			},
+			"attr" : "sensor.alarm.iaqGuide",
+			"isPush" : true,
+			"category" : "CATEGORY_1"
+		}, 
+		{
+			"push" : {
+				"type" : "alert",
+				"min" : 15,
+				"minMessage" : "베터리 잔량이 15% 이하 입니다. (현재 : {value})"
+			},
+			"attr" : "sensor.power.batteryUsage",
+			"isPush" : true,
+			"category" : "CATEGORY_1"
+		}
+	],
+	"activateAt" : ISODate("2020-09-01T05:37:46.597Z"),
+	"isConnected" : false
+}

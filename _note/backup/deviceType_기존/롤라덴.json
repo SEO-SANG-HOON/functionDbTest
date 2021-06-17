@@ -1,0 +1,126 @@
+{
+	"_id": ObjectId("5f167c17206a332f38763094"),
+	"deviceType": "rolladen",
+	"deviceTypeName": "롤라덴",
+	"trigger": false,
+	"action": true,
+	"description": "외부에 위치한 감아올리는 덧문.",
+	"power": [
+		"electric"
+	],
+	"firmware": {
+		"mcu": {
+			"version": "1.0",
+			"fileName": "Untitled1.txt",
+			"lastUploaded": ISODate("2019-09-06T02:58:18.371Z")
+		},
+		"modem": {
+			"version": "1.1",
+			"fileName": "rolladen_firm_modem_zo1920.dat",
+			"lastUploaded": ISODate("2019-09-06T02:58:24.324Z")
+		}
+	},
+	"properties": {
+		"reported": {
+			"mode": [
+				"created",
+				"control",
+				"reset"
+			],
+			"attr": {
+				"type": [
+					"rolladen"
+				],
+				"name": "",
+				"count": [
+					0,
+					100
+				],
+				"macAddr": "",
+				"serialNo": "",
+				"power": [
+					"electric",
+					"battery"
+				],
+				"manufacturer": "",
+				"firmware": {
+					"mcu": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					},
+					"modem": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					}
+				},
+				"roll": [
+					0,
+					100
+				],
+				"awning": [
+					"on",
+					"off"
+				]
+			}
+		},
+		"desired": {
+			"mode": [
+				"control",
+				"setting",
+				"reset"
+			],
+			"attr": {
+				"roll": [
+					0,
+					100
+				],
+				"awning": [
+					"on",
+					"off"
+				],
+				"firmware": {
+					"mcu": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					},
+					"modem": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					}
+				}
+			}
+		},
+		"action": {
+			"attr": {
+				"roll": [
+					{
+						"display": "올림",
+						"value": 0
+					},
+					{
+						"display": "내림",
+						"value": 100
+					}
+				]
+			}
+		}
+	},
+	"uiActivated": false,
+	"management": {
+		"isDisplay": false,
+		"registratedAt": null,
+		"lastUpdatedAt": null
+	}
+}

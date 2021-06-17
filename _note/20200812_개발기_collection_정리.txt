@@ -1,0 +1,38 @@
+[전체 Colection 목록]
+accounts
+actuatings
+boards
+desired
+deviceJobs
+deviceTypes
+devices
+firmwareHistory
+jobs
+notifications
+oauthClients
+placeSharings
+places
+references
+sensings
+settings
+thinq
+thinqTokens
+users
+weather
+weatherForecast
+withdrawUsers
+
+[Colection 삭제 대상]
+x accounts
+x actuatings
+x desired
+x deviceJobs
+x jobs
+x oauthClients
+? references	세팅으로 대체 했나?? 
+x weather
+x weatherForecast
+
+[Colection 이관 대상]
+deviceTypes
+settings

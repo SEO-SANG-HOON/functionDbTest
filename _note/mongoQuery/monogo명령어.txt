@@ -1,0 +1,63 @@
+디바이스 조회
+5ee2c3684e0c41001f091ce0
+db.getCollection('devices').find({_id: ObjectId("5ee2c3684e0c41001f091ce0")})
+
+테스트 사용자 정보
+db.getCollection('users').find({_id: ObjectId("5d48ca336ac488003c916ca3")})
+
+해당 place에 접근 가능한 사람 목록 (place : 5d48ca3b6ac488003c916ca4
+db.getCollection('places').find({ _id: ObjectId("5d48ca3b6ac488003c916ca4")});
+
+사용자가 해당 place에 접근 가능한지 확인 (place : 5d48ca3b6ac488003c916ca4, 사용자 : 5d48ca336ac488003c916ca3)
+db.getCollection('places').find({ _id: ObjectId("5d48ca3b6ac488003c916ca4"), accessibles: "5d48ca336ac488003c916ca3" });
+
+
+[테스트 사용자 로그인 정보]
+김진우	kakao	1094834312
+
+소유자 정보
+{
+    "_id" : ObjectId("5d48ca336ac488003c916ca3"),
+    "appLogin" : {
+        "site" : "kakao",
+        "openId" : "1094834312",
+        "profileImage" : "TEST_profileImage",
+        "email" : "TEST_email"
+    },
+    "status" : "active",
+    "lastAccessedAt" : ISODate("2020-05-25T03:15:06.748Z"),
+    "nickname" : "김진우",
+    "userAgent" : "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.0 Safari/537.36",
+    "pushToken" : "TEST_pushToken",
+    "userCode" : "85845782",
+    "tncInfo" : {
+        "version" : "1.0",
+        "agreedAt" : ISODate("2019-08-06T00:30:51.058Z")
+    },
+    "notificationOpt" : true,
+    "deviceControlNotificationOpt" : true,
+    "nightModeOpt" : false,
+    "locationOpt" : false,
+    "activatedAt" : ISODate("2019-08-06T00:30:51.073Z"),
+    "defaultLocation" : {
+        "address" : "인천 서구 청라에메랄드로76번길 14\n157",
+        "postCode" : "22739",
+        "origin" : {
+            "type" : "Point",
+            "coordinates" : [
+                0,
+                0
+            ]
+        },
+        "gridKey" : "060-120"
+    },
+    "lastUpdatedAt" : ISODate("2019-10-15T08:27:19.845Z"),
+    "appVersion" : "TEST_appVersion",
+    "tncVersion" : "1.0"
+}
+
+// 테스트 디바이스 목록
+5ecf10e52435110019e8bc69 : HostName=zinfwiothubdev.azure-devices.net;DeviceId=5ecf10e52435110019e8bc6a;SharedAccessKey=+t71oTMf+7rtXNHGm0QgZP/rKvnRpcvnFSHa8gY9LtQ=
+5ecf10e52435110019e8bc6a : HostName=zinfwiothubdev.azure-devices.net;DeviceId=5ecf10e52435110019e8bc6c;SharedAccessKey=BhbvpJPx83U/nBNDjC33jWejV6LpdI1zSRB3+iPofuc=
+5ecf10e52435110019e8bc6b : HostName=zinfwiothubdev.azure-devices.net;DeviceId=5ecf10e52435110019e8bc69;SharedAccessKey=XEhExgaA0F8mhAABcXngWrZZ8qXFLJv+YICHfM18kdE=
+5ecf10e52435110019e8bc6c : HostName=zinfwiothubdev.azure-devices.net;DeviceId=5ecf10e52435110019e8bc6b;SharedAccessKey=xGHDWPcMFe+mmoq5xNYh7mdIg5o9uijTCyOmnJvyYHc=

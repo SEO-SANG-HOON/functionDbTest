@@ -1,0 +1,19 @@
+
+/api/v1/user/5f3623b5ae777c00197d60d0/place/5f4341a06e81880018ece004?group=deviceCategory&filter=CATEGORY_1
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjM2MjNiNWFlNzc3YzAwMTk3ZDYwZDAiLCJvYXV0aFNp$GUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTU5ODU4NTY3NTcxNiIsIm5pY2tuYW1lIjoiVEVTVF9uaWNrbmFtZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTU5ODU4NTY3NX0$q-4Gb1coTNRU2de2cOTLBxPwFzDqCffUckcefpiCDbM
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjM2MjNiNWFlNzc3YzAwMTk3ZDYwZDAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTU5ODU4NTY3NTcxNiIsIm5pY2tuYW1lIjoiVEVTVF9uaWNrbmFtZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTU5ODU4NTY3NX0.q-4Gb1coTNRU2de2cOTLBxPwFzDqCffUckcefpiCDbM
+
+
+curl --location --request GET 'https://zinfwtest-service.koreacentral.cloudapp.azure.com/api/v1/user/5f2a4e439d23940018bfad3a/place/5efd96923f4c2e0018cc5ca4?group=deviceCategory&filter=CATEGORY_3' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjJhNGU0MzlkMjM5NDAwMThiZmFkM2EiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNTk2NjA4MDY3MDgxIiwibmlja25hbWUiOiIiLCJpYXQiOjE1OTY2MDgwNjd9.gX9c8aQoVNFLKtZJnkXopt8iYOIZPfArAcx62BGxrgU'
+
+
+if (!error.code) {
+	return httpContext.throw(500, error);
+} else {
+	return httpContext.throw(error.code, error);
+}
+
+return httpContext.throw(500, error);
+return httpContext.throw(error.code || 500, error);

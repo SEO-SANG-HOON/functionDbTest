@@ -1,0 +1,4 @@
+// createdAt이 문자열로 변경되는 이슈 대응
+if (deviceOrg.createdAt) {
+	deviceOrg.createdAt = new Date(deviceOrg.createdAt);
+}

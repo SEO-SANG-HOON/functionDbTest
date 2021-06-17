@@ -1,0 +1,40 @@
+2020-08-31 06:23:02 info:   <-- PUT /api/v1/device/undefined/room
+2020-08-31 06:23:02 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRiMTc1MzkyN2FlZTAwMTg2ZTBiOGIiLCJvYXV0aFNpd
+GUiOiJrYWthbyIsImxvZ2luQXQiOiIxNTk4NzU2NjkxMTgwIiwibmlja25hbWUiOiLsp4DsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1OTg3NTY2OTF9.BYGRb4r
+u7jdpddcM1BocVplx8dG6cRwRfJu4a9X4GOg
+(node:24) UnhandledPromiseRejectionWarning: ReferenceError: deviceType is not defined
+    at Promise (/usr/src/app/src/model/v1/device.js:445:57)
+    at new Promise (<anonymous>)
+    at Object.updateDeviceRoom (/usr/src/app/src/model/v1/device.js:439:9)
+    at exports.updateRoom (/usr/src/app/src/controller/v1/device.js:495:16)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+(node:24) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async fu
+nction without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 45)
+
+
+placeId: "5f4b1799332d5049b01bc47c"
+thinqDeviceId: "90ca6128e94a4c8ff104ac06e968ca37fd3d4405eaaceb54aa08864c01fa7588"
+
+https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/device/undefined/room
+
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRiMTc1MzkyN2FlZTAwMTg2ZTBiOGIiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNTk4NzU2NjkxMTgwIiwibmlja25hbWUiOiLsp4DsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1OTg3NTY2OTF9.BYGRb4ru7jdpddcM1BocVplx8dG6cRwRfJu4a9X4GOg
+/api/device?userId=5f4b1753927aee00186e0b8b&placeId=5f4b1799332d5049b01bc47c&thinqDeviceId=90ca6128e94a4c8ff104ac06e968ca37fd3d4405eaaceb54aa08864c01fa7588 200 3,194ms -
+
+
+
+
+2020-08-31 06:51:52 info:   --> PUT /api/v1/device/5f4c9dfca388de00193fb781/room 200 20ms -
+
+
+2020-08-31 06:51:52 info:   <-- GET /api/v1/user/5f487599ac1fa80019f9d095/place                                            
+2020-08-31 06:51:52 info: listPlaces: started for user 5f487599ac1fa80019f9d095.
+2020-08-31 06:51:52 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjM2MjNiNWFlNzc3YzAwMTk3ZDYwZDAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTU5ODU4NTY3NTcxNiIsIm5pY2tuYW1lIjoiVEVTVF9uaWNrbmFtZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTU5ODU4NTY3NX0.q-4Gb1coTNRU2de2cOTLBxPwFzDqCffUckcefpiCDbM                                                                                            2020-08-31 06:51:52 error: listPlaces: error.
+2020-08-31 06:51:52 error: listPlaces: error.                                   
+2020-08-31 06:51:52 error: Forbidden                                                             
+2020-08-31 06:51:52 info:   --> GET /api/v1/user/5f487599ac1fa80019f9d095/place 403 1ms 96b     
+
+
+
+2020-08-31 06:51:52 info:   <-- GET /api/v1/user/5f4b1753927aee00186e0b8b/place                                                        

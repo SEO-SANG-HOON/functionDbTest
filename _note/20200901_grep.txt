@@ -1,0 +1,1 @@
+egrep -rn "FIRE|initApplication" ./2020-08-31-ults.log

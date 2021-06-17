@@ -1,0 +1,35 @@
+20201005 TODO
+v led 핸들 푸쉬 정보는 저장되는데, 디바이스 상세 목록에는 안나옴
+
+v 모니터링 중 : thinq 메모리 누수 (woker 추가 / 삭제 후 테스트)
+	npm run-script "dev:debug"
+	kubectl cp deploy-zinfw-dev-thinq-759ff9d86-jqg8t:/usr/src/app/logs/2020-10-05-results.log ./test.log
+
+v 사용자 이메일 변경 api 검증
+
+- 12개월 미사용자 삭제 배치 테스트
+
+- led 핸들 날씨 보내기 스케줄
+
+- 펌웨어 업데이트 api 수정
+	 - 최신 펌웨어의 정보를 가지고 업데이트 하도록 변경
+		 curl 'http://localhost:3001/api/v1/device/5f5092c6b03ed30018873a08/firmware' -X 'PUT'
+
+		filename = 'uploadTest7.bin';  // DB에서 가져옴
+		if (modemTarget) {
+			modemBlobName = `${process.env.AZURE_STORAGE_FIRMWARE_FOLDER_NAME}/${deviceInfo.device.type}/${filename}`;
+		}
+
+=======================================
+
+[메모리 누수 확인 스크립트 -> nohub 안됨]
+cd /usr/src/app/logs
+touch memCheck.sh
+vi  memCheck.sh
+for x in *;do
+        date >> /usr/src/app/logs/free.log
+        free -m | grep Mem >> /usr/src/app/logs/free.log
+        sleep 60
+done;
+
+nohup sh memCheck.sh &

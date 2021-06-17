@@ -1,0 +1,31 @@
+[산출물 등록 link]
+분석
+요구사항 정의 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=20&taskCd=30&productCd=30&atfOwner=Y
+아키텍쳐 정의 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=20&taskCd=60&productCd=60&atfOwner=Y
+개발표준 정의 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=20&taskCd=70&productCd=70&atfOwner=Y
+
+설계
+어플리케이션 설계 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=30&taskCd=90&productCd=80&atfOwner=Y
+프로그램 목록 작성 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=30&taskCd=110&productCd=100&atfOwner=Y
+인터페이스 설계 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=30&taskCd=120&productCd=110&atfOwner=Y
+테이블 설계 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=30&taskCd=130&productCd=120&atfOwner=Y
+
+구축
+프로그램 개발 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=40&taskCd=160&productCd=160&atfOwner=Y
+단위 테스트 수행 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=40&taskCd=170&productCd=170&atfOwner=Y
+
+테스트
+통합 테스트 수행 : 
+사용자 승인 테스트 : 
+
+이행
+사용자 매뉴얼 작성 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=60&taskCd=190&productCd=190&atfOwner=Y
+사용자 교육 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=60&taskCd=210&productCd=210&atfOwner=Y
+운영자 매뉴얼 작성 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=60&taskCd=220&productCd=220&atfOwner=Y
+유지보수 인수인계 : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=60&taskCd=230&productCd=230&atfOwner=Y
+프로젝트 완료 보고  : http://itms.lghausys.com/jsp/pm/product/PM_ProductUpload_P.jsp?divParent=DTL&prjNo=PJ2020-00034&stepCd=60&taskCd=240&productCd=240&atfOwner=Y
+
+
+
+
+

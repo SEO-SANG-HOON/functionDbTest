@@ -1,0 +1,13 @@
+String url ="jdbc:mariadb://mdb-zinfw-dev.mariadb.database.azure.com:3306/{your_database}?useSSL=true"; myDbConn = DriverManager.getConnection(url, "dspapp@mdb-zinfw-dev", {your_password});
+- {your_database} : mngr
+- {your_password} : dspapp00
+- account : dspapp@mdb-zinfw-dev
+
+String url ="jdbc:mariadb://mdb-zinfw-prod-admin.mariadb.database.azure.com:3306/{your_database}?useSSL=true"; myDbConn = DriverManager.getConnection(url, "dbadmin@mdb-zinfw-prod-admin", {your_password});
+
+#      jdbc-url: jdbc:mariadb://localhost:3306/mngr
+      jdbc-url: jdbc:mariadb://mdb-zinfw-dev.mariadb.database.azure.com:3306/mngr
+      username: dspapp@mdb-zinfw-dev
+#      jdbc-url: jdbc:mariadb://mdb-zinfw-prod-admin.mariadb.database.azure.com:3306/mngr
+#      username: dspapp@mdb-zinfw-prod-admin
+      password: "!dspapp00"

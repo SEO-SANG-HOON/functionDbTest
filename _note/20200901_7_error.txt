@@ -1,0 +1,37 @@
+/api/v1/device/5f4b192d5d3ba440b0def1e7
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRiMTc1MzkyN2FlZTAwMTg2ZTBiOGIiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNTk4ODczNjAzMzcxIiwibmlja25hbWUiOiLsp4DsmIHsirkyIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNTk4ODczNjAzfQ.LHauF-oD1RwPl3gtFLki-_LYiRi80hxZKg4sbKVAsTA
+
+
+
+
+2020-09-01 03:04:58 info:   <-- PUT /api/v1/device/5f4b19375d3ba440b0def221/link
+2020-09-01 03:04:58 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRiMTc1MzkyN2FlZTAwMTg2ZTBiOGIiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNTk4OTI3MDgxMTQ2Iiwibmlja25hbWUiOiLsp4DsmIHsirkyIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNTk4OTI3MDgxfQ.Y7_UxijjMFSNfnSfP3Owsr_PxSZnDgcI-BwzzqqFLQI
+2020-09-01 03:04:58 error: updateLink: {"targetDeviceId":"5f4dacab1147770018fbb75f","event":{"delayTimer":0,"delayTimerOnOff":false,"fanCountBySpeed":[0,0,0]}}
+2020-09-01 03:04:58 info:   --> PUT /api/v1/device/5f4b19375d3ba440b0def221/link 200 54ms -
+2020-09-01 03:04:59 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-09-01 03:04:59 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRiMTc1MzkyN2FlZTAwMTg2ZTBiOGIiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNTk4OTI3MDgxMTQ2Iiwibmlja25hbWUiOiLsp4DsmIHsirkyIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNTk4OTI3MDgxfQ.Y7_UxijjMFSNfnSfP3Owsr_PxSZnDgcI-BwzzqqFLQI
+2020-09-01 03:04:59 info:   --> GET /api/v1/board/lastestSequence/notice 200 9ms 21b
+2020-09-01 03:04:59 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-09-01 03:04:59 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRiMTc1MzkyN2FlZTAwMTg2ZTBiOGIiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNTk4OTI3MDgxMTQ2Iiwibmlja25hbWUiOiLsp4DsmIHsirkyIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNTk4OTI3MDgxfQ.Y7_UxijjMFSNfnSfP3Owsr_PxSZnDgcI-BwzzqqFLQI
+2020-09-01 03:04:59 info:   --> GET /api/v1/board/lastestSequence/notice 200 12ms 21b
+
+=============
+
+2020-09-01 07:02:15 error: getDeviceInfo: error.
+2020-09-01 07:02:15 error: TypeError: Cannot set property 'push' of undefined
+    at exports.getDeviceInfo (/usr/src/app/src/controller/v1/device.js:232:38)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-09-01 07:02:15 info:   --> GET /api/v1/device/5f4ddda5403b65001839cacb 500 42ms 115b
+2020-09-01 07:02:22 info:   <-- GET /api/v1/device/5f4ddda5403b65001839cacb
+2020-09-01 07:02:22 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjQzNDE4ZGZjNzlhNDAwMTg5YmFmNDgiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTU5ODg2Njk4OTQ0MCIsIm5pY2tuYW1lIjoiVEVTVF9uaWNrbmFtZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTU5ODg2Njk4OX0.rTASk70c4r5rqApJJj1jQ2E_Sr61XfM9NgtHyUh_OH4
+2020-09-01 07:02:22 error: getDeviceInfo: error.
+
+  TypeError: Cannot set property 'push' of undefined
+      at exports.getDeviceInfo (/usr/src/app/src/controller/v1/device.js:232:38)
+      at process._tickCallback (internal/process/next_tick.js:68:7)
+
+2020-09-01 07:02:22 error: TypeError: Cannot set property 'push' of undefined
+    at exports.getDeviceInfo (/usr/src/app/src/controller/v1/device.js:232:38)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-09-01 07:02:22 info:   --> GET /api/v1/device/5f4ddda5403b65001839cacb 500 42ms 115b

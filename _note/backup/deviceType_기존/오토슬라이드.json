@@ -1,0 +1,148 @@
+{
+	"_id": ObjectId("5f167c17206a332f38763093"),
+	"deviceType": "auto_slide",
+	"deviceTypeName": "오토 슬라이드",
+	"trigger": false,
+	"action": true,
+	"description": "전기 신호로 문을 열고 닫는 장비.",
+	"power": [
+		"electric"
+	],
+	"firmware": {
+		"mcu": {
+			"version": "1.0",
+			"fileName": "29.bin",
+			"lastUploaded": ISODate("2019-11-11T07:16:12.496Z")
+		},
+		"modem": {
+			"version": "1.1.1",
+			"fileName": "autoslide_modem.1.1.1.bin",
+			"lastUploaded": ISODate("2019-10-11T00:18:52.948Z")
+		}
+	},
+	"properties": {
+		"reported": {
+			"mode": [
+				"created",
+				"control",
+				"reset"
+			],
+			"attr": {
+				"type": [
+					"auto_slide"
+				],
+				"name": "",
+				"count": [
+					0,
+					100
+				],
+				"macAddr": "",
+				"serialNo": "",
+				"power": [
+					"electric",
+					"battery"
+				],
+				"manufacturer": "",
+				"firmware": {
+					"mcu": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					},
+					"modem": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					}
+				},
+				"doorA": {
+					"percent": [
+						0,
+						100
+					]
+				},
+				"doorB": {
+					"percent": [
+						0,
+						100
+					]
+				}
+			}
+		},
+		"desired": {
+			"mode": [
+				"control",
+				"setting",
+				"reset"
+			],
+			"attr": {
+				"doorA": {
+					"percent": [
+						0,
+						100
+					]
+				},
+				"doorB": {
+					"percent": [
+						0,
+						100
+					]
+				},
+				"firmware": {
+					"mcu": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					},
+					"modem": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					}
+				}
+			}
+		},
+		"action": {
+			"attr": {
+				"doorA": {
+					"percent": [
+						{
+							"display": "왼쪽창문닫힘",
+							"value": 100
+						},
+						{
+							"display": "왼쪽창문열림",
+							"value": 0
+						}
+					]
+				},
+				"doorB": {
+					"percent": [
+						{
+							"display": "오른쪽창문닫힘",
+							"value": 100
+						},
+						{
+							"display": "오른쪽창문열림",
+							"value": 0
+						}
+					]
+				}
+			}
+		}
+	},
+	"uiActivated": false,
+	"management": {
+		"isDisplay": false,
+		"registratedAt": null,
+		"lastUpdatedAt": null
+	}
+}

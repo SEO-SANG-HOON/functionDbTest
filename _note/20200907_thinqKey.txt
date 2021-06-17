@@ -1,0 +1,16 @@
+[ThinQ PRD 정보]
+Service ID : a403eb9412dd25dd23c9fd6
+Service Key : eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXJ2aWNlSWQiOiJhNDAzZWI5NDEyZGQyNWRkMjNjOWZkNjEiLCJ0b2tlblNlZWQiOiI1Zjc2MWQwMDU2YmE4NWJkIiwidGltZSI6MTU5ODI0ODg0NH0.n-hNwiVxvJQDwjxZWO8WnMGJdz9vqY8P6CZIEwlfqp0
+Callback Url : https://iot-service.lghausys.com/service/thinq/callback
+EMP_BACKEND_URL=https://kr.lgeapi.com/
+EMP_BASE_URL=https://kr.m.lgaccount.com/emp/
+
+[ThinQ 연동 에러]
+[1]
+EMP 로그인 되지 않은 현상
+https://kr.m.lgaccount.com/spx/login/signIn?client_id=186fabb1b2ab46dc9ed372f40b0fb313&country=KR&division=EXT%3AHAUSYS&language=ko-KR&redirect_uri=https%3A%2F%2Fiot-service.lghausys.com%2Fservice%2Fthinq%2FauthCallback&show_thirdparty_login=AMZ%2CFBK%2CGGL%2CNAV&state=5f50b924b45e290019918510&svc_list=SVC202&third_party_service_name=lghausys&terms_name=LG하우시스&cross_login=N&except_new=Y&thirdParty=google#access_token=ya29.a0AfH6SMDWpc8dB2EzDEgMj6GB4mp_IusC9Uk2SAhd6IieHeMBo1RArNtHtCiBEa_upWEMEcWJwk-WbEhcu6J_l7t_fNeZsJCswOj8CdmH343LzkaBfsSkbe4kZAkluDQf6QvfZKoxCJKJfqscHfQxKxUr3ChUAo8CEFA&token_type=Bearer&expires_in=3598&scope=email https://www.googleapis.com/auth/userinfo.email openid&authuser=0&prompt=none&user_id=106819838234745116868
+
+[2]
+EMP 로그인은 되지만, Thinq API 호출시 에러나는 현상
+2020-09-07 04:36:14 debug: Request : {"headers":{"Content-Type":"application/json;charset=UTF-8","x-service-id":"a403eb9412dd25dd23c9fd6","x-service-key":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXJ2aWNlSWQiOiJhNDAzZWI5NDEyZGQyNWRkMjNjOWZkNjEiLCJ0b2tlblNlZWQiOiI1Zjc2MWQwMDU2YmE4NWJkIiwidGltZSI6MTU5ODI0ODg0NH0.n-hNwiVxvJQDwjxZWO8WnMGJdz9vqY8P6CZIEwlfqp0","x-country-code":"KR","x-message-id":"ZIN_REQ__1599453374330","x-conditional-control":true,"Authorization":"Bearer 4584c0426bb0f0c40ad708e5efe062248d3261aefb51d1b15e716d73e0f6da3d0e51479babb9ad6a2ba998be7cff526b"},"url":"https://kic-ext.lgthinq.com/devices"}
+2020-09-07 04:36:14 error: StatusCodeError: 404 - "{\"messageId\": \"ZIN_REQ__1599453374330\", \"timestamp\": \"2020-09-07T04:36:14.452923\", \"error\": {\"message\": \"Not registered service\", \"code\": \"1203\"}}"

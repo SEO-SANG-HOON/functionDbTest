@@ -1,0 +1,25 @@
+20201005 이메일 변경 테스트
+[개발 서버]
+닉 변경
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/user/5f6d9a2d10ddc50018653057' -X 'PUT' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxODgyNTg3MzE1Iiwibmlja25hbWUiOiLsp4DsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE4ODI1ODd9.q5awm2fWTC4OFwATCHpbfwE06UTsUKm1jKFRLzU-neQ' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  --data-binary '{"nickname":"영승2"}' \
+  --compressed | jq
+
+[로컬]
+닉 변경
+curl 'http://localhost:3001/api/v1/user/5f6d9a2d10ddc50018653057' -X 'PUT' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxODgyNTg3MzE1Iiwibmlja25hbWUiOiLsp4DsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE4ODI1ODd9.q5awm2fWTC4OFwATCHpbfwE06UTsUKm1jKFRLzU-neQ' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  --data-binary '{"nickname":"영승"}' \
+  --compressed | jq
+
+curl 'http://localhost:3001/api/v1/user/5f6d9a2d10ddc50018653057' -X 'PUT' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxODgyNTg3MzE1Iiwibmlja25hbWUiOiLsp4DsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE4ODI1ODd9.q5awm2fWTC4OFwATCHpbfwE06UTsUKm1jKFRLzU-neQ' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  --data-binary '{"email":"test@gmail.com"}' \
+  --compressed | jq

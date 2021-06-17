@@ -1,0 +1,63 @@
+20200922 Admin 통계 API Spec
+
+1. UI Selectbox Item 조회
+[URL] /statistics/deviceActivateItems
+
+[Response]
+{
+	deviceCategory : [
+		{
+			id: smarthood
+			name : 스마트후드,
+		},
+		...
+	]
+	deviceModel : [
+		{
+				parent: smarthood 
+				id: smarthood01,
+				name : 스마트후드01
+		},
+		...
+	],
+	location: ["서울", "부산", "대구", "인천", "대전", "광주광역시", "울산", "세종특별자치시", "경기", "강원", "충북", "충남", "경북", "경남", "전북", "전남", "제주특별자치도"]
+}
+
+2. 통계 데이터 조회
+[URL] /statistics/deviceActivate
+
+[Param]
+{
+	deviceCategory : "",
+	deviceModel : "",
+	location : ""
+}
+
+[Response]
+[
+	{
+		name: "활성 디바이스",
+		data: [
+			{ x: "서울", y: "1000" },
+			{ x: "부산", y: "1000" },
+			...
+		],
+	},
+	{
+		name: "연결 디바이스",
+		data: [
+			{ x: "서울", y: "1000" },
+			{ x: "부산", y: "1000" },
+			...
+		],
+	},
+	{
+		name: "비연결 디바이스",
+		data: [
+			{ x: "서울", y: "1000" },
+			{ x: "부산", y: "1000" },
+			...
+		],
+	},
+]
+

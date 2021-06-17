@@ -1,0 +1,108 @@
+{
+    "ownerId" : "5f43418dfc79a400189baf48",
+    "ownerUserCode" : "11722362",
+    "placeId" : "5f4cd00305595f0018ce3bcd",
+    "roomId" : "000000000000000000000000",
+    "accessibles" : [ 
+        "5f43418dfc79a400189baf48"
+    ],
+    "isActivate" : true,
+    "createdAt" : ISODate("2020-09-01T05:35:33.526Z"),
+    "lastUpdatedAt" : ISODate("2020-09-04T08:03:27.512Z"),
+
+
+
+    "device" : {
+        "firmware" : {
+            "mcu" : {
+                "version" : "0.1.0",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "0.9.6.7",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        },
+        "parentModel" : "SMARTVENTIL",
+        "category" : "CATEGORY_2",
+        "type" : "LGH_SMARTVENTIL2020A",
+        "name" : "환기창",
+        "description" : "환기창",
+        "deviceId" : "5f59d349300dfe0019d570a5",
+        "deviceType" : "",
+        "connType" : "wifi",
+        "macAddr" : "500291d15e21",
+        "serialNo" : "LGH-VENTIL_00001",
+        "powerType" : "electric",
+        "manufacturer" : "LGH",
+        "power" : "electric",
+        "manufacture" : "LGHAUSYS"
+    },
+    "sensor" : {
+        "power" : {
+            "batteryUsage" : "",
+            "status" : "on",
+            "usageTime" : ""
+        },
+        "alarm" : {
+            "changeSensor" : "",
+            "cleanSensor" : "",
+            "changeFilter" : ""
+        },
+        "timer" : {
+            "status" : "off",
+            "minute" : 0,
+            "remainMinute" : 0,
+            "startTime" : ""
+        },
+        "fan" : {
+            "fanSpeed" : "0"
+        },
+        "filter" : {
+            "filterLifeTime" : 4000,
+            "filterUsageTime" : 0,
+            "cleanLifeTime" : 2000,
+            "cleanUsageTime" : 0,
+            "status" : {
+                "changeFilter" : "off",
+                "cleanFilter" : "off"
+            }
+        },
+        "heatExchanger" : {
+            "lifeTime" : 20000,
+            "usageTime" : 0,
+            "status" : {
+                "changeHeatExchanger" : "off"
+            }
+        },
+        "airCondition" : {
+            "co2" : 52,
+            "pm2_5" : 18,
+            "tvocs" : 0,
+            "temperature" : 51,
+            "humidity" : 0
+        },
+        "mode" : ""
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : ""
+    },
+    "linked" : {
+        "sourceDeviceId" : ""
+    },
+ 
+
+
+
+
+
+    "activateAt" : ISODate("2020-09-01T05:37:46.597Z"),
+    "isConnected" : false
+}

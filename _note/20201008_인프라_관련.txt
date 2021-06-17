@@ -1,0 +1,8 @@
+20201008 인프라 관련
+AKS VMSS - work
+	- AGIC (Application gate ingrees controller) : 원래 있는 pod임 (MS에서 배포한 POD)
+		- NINX ingress
+	ENINX ingress (x)
+	prod는 하나의 수신기 안에 서비스가 두개
+		admin은 수신기가 하나
+Application GW -> AKS Service ->

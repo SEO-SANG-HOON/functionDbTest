@@ -1,0 +1,81 @@
+mongoDb
+
+[dev]
+mongodb://zinfw-db-dev:haYJ4gWbGA8Mj0xLYMhuU3rgHYcFtIzhAtEuZYE4G7jTOh9kcyAmDoPJwqLVgQMsjaEwBYtnkU3ahTiu3agzTw==@zinfw-db-dev.documents.azure.com:10255/zinfwdbdev?ssl=true
+mongodb://zinfw-db-dev:haYJ4gWbGA8Mj0xLYMhuU3rgHYcFtIzhAtEuZYE4G7jTOh9kcyAmDoPJwqLVgQMsjaEwBYtnkU3ahTiu3agzTw==@zinfw-db-dev.documents.azure.com:10255/zinfwdbdev?ssl=true&replicaSet=globaldb
+zinfw-db-dev.documents.azure.com	10255
+database : zinfwdbdev
+username : zinfw-db-dev
+pass : haYJ4gWbGA8Mj0xLYMhuU3rgHYcFtIzhAtEuZYE4G7jTOh9kcyAmDoPJwqLVgQMsjaEwBYtnkU3ahTiu3agzTw==
+use ssl : self-signed certificate
+
+[prd]
+zinfw-db.documents.azure.com		10255
+database : zinfwdb
+username : zinfw-db
+mongodb://zinfw-db:D5hOAg2T2LsLd2K6imhMqcfTsEtYnAAa5BuGZV9323qF5ohwf9rwRJUt8UaHO40uA00Yn6lSO2lSXMVuIcrzxg==@zinfw-db.documents.azure.com:10255/zinfwdb?ssl=true&replicaSet=globaldb
+use ssl : self-signed certificate
+
+[DB Collection 목록]
+boards
+desired
+deviceJobs
+devices
+deviceTypes
+firmwareHistory
+notifications
+places
+placeSharings
+sensings
+settings
+thinq
+thinqTokens
+users
+weather
+weatherForecast
+withdrawUsers
+
+삭제예정	references
+삭제예정	oauthClients
+삭제예정	jobs
+삭제예정	accounts
+삭제예정	actuatings
+
+
+DB 이관 (dev -> prd)
+
+[전체 이관]
+boards
+deviceTypes
+settings
+
+devices
+places
+users
+============
+DB 이관 (dev -> prd)
+[DB Collection 목록]
+boards
+desired
+deviceJobs
+devices
+deviceTypes
+firmwareHistory
+notifications
+places
+placeSharings
+sensings
+settings
+thinq
+thinqTokens
+users
+weather
+weatherForecast
+withdrawUsers
+
+삭제예정	references
+삭제예정	oauthClients
+삭제예정	jobs
+삭제예정	accounts
+삭제예정	actuatings
+

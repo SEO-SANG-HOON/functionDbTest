@@ -1,0 +1,2 @@
+20201007 thinq 개발기 로그인 안되는 현상
+https://kr.m.lgaccount.com/spx/login/signIn?svc_list=SVC202&division=EXT:HAUSYS&country=KR&language=ko-KR&cross_login=N&except_new=Y&terms_name=LG하우시스&third_party_service_name=lghausys&show_thirdparty_login=AMZ,FBK,GGL,NAV&response_type=code&client_id=186fabb1b2ab46dc9ed372f40b0fb313&state=5f6d9a2d10ddc50018653057&redirect_uri=https%3A%2F%2Fziniot-test.koreacentral.cloudapp.azure.com%2Fservice%2Fthinq%2FauthCallback&min=-min

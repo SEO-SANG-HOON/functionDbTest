@@ -1,0 +1,26 @@
+db.getCollection('sensings').aggregate([
+    {
+        $match: {
+            deviceId: ObjectId("5f9902e81e85ab001878990a"),
+            "sensor.airCondition.temperature": {$ne: null}
+        }
+    },
+    {
+        $addFields: {
+            temperature: "$sensor.airCondition.temperature"
+        }
+    },
+    
+    {
+        $sort: {
+            sensingAtKor:-1
+        }
+    },
+    {
+        $project: {
+            "sensingAtKor": 1,
+            "temperature" : 1
+//        "ensor.airCondition.temperature": 1
+        }
+    }
+])

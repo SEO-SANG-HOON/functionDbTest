@@ -1,0 +1,27 @@
+[
+	{
+		"properties": {
+			"reported": {
+				"operation": "create",
+				"device": {
+					"type": "LGH_SMARTHOOD2020A",
+					"deviceType": "sen",
+					"connType": "wifi",
+					"count": 1,
+					"macAddr": "500291d15de9",
+					"serialNo": "LGH-HOOD_00001",
+					"power": "electric",
+					"manufacture": "LGHAUSYS",
+					"firmware": {
+						"mcu": {
+							"version": "0.1.0"
+						},
+						"modem": {
+							"version": "0.9.6.3"
+						}
+					}
+				}
+			}
+		}
+	}
+]

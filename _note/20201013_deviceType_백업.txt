@@ -1,0 +1,1912 @@
+/* 1 */
+{
+    "_id" : ObjectId("5f167c17206a332f38763096"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "_parent",
+        "category" : "CATEGORY_1",
+        "type" : "SMARTHOOD",
+        "name" : "",
+        "description" : "스마트후드",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "",
+        "manufacturer" : "LGH",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "power" : {
+            "batteryUsage" : "",
+            "status" : "",
+            "usageTime" : ""
+        },
+        "alarm" : {
+            "controllAlarm" : ""
+        },
+        "fan" : {
+            "fanSpeed" : 0
+        },
+        "timer" : {
+            "status" : "",
+            "minute" : "",
+            "remainMinute" : "",
+            "startTime" : ""
+        },
+        "lamp" : {
+            "status" : ""
+        },
+        "filter" : {
+            "lifeTime" : "",
+            "usageTime" : ""
+        },
+        "setting" : {
+            "filterPush" : true
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.power.status",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "전원",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "off" : "스마트후드({name})가 꺼졌습니다.",
+                    "on" : "스마트후드({name})가 켜졌습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.power.usageTime",
+            "isPush" : false,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "value",
+            "push" : {
+                "type" : "value",
+                "message" : "스마트후드({name})의 사용시간이 변경 되었습니다. (현재 : {value})"
+            }
+        }, 
+        {
+            "attr" : "sensor.fan.fanSpeed",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "value",
+                "message" : "스마트후드({name})의 Fan Speed가 변경 되었습니다. (현재 : {value})"
+            }
+        }, 
+        {
+            "attr" : "sensor.lamp.status",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "off" : "스마트후드({name})의 LED가 꺼졌습니다.",
+                    "on" : "스마트후드({name})의 LED가 켜졌습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.filter.lifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.filter.usageTime",
+            "compare" : "sensor.filter.lifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "스마트후드({name})의 필터 교체가 필요합니다."
+            }
+        }
+    ],
+    "management" : {
+        "isDisplay" : false,
+        "registratedAt" : null,
+        "lastUpdatedAt" : null
+    }
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5f167c17206a332f38763099"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "LGE_COOKTOP",
+        "category" : "CATEGORY_3",
+        "type" : "WBEY3GWT",
+        "name" : "레인지 (WBEY3GWT)",
+        "description" : "레인지 (WBEY3GWT)",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "",
+        "manufacturer" : "lge_thinq",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "setting" : {
+            "controllAlarm" : "on"
+        },
+        "leftFront" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "rightFront" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "leftRear" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.leftFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.rightFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 우측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 우측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 우측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 우측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 우측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 우측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 우측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 우측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 우측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 우측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.leftRear.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 후방 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 후방 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 후방 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 후방 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 후방 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 후방 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 후방 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 후방 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 후방 화구 상태가 9입니다."
+                }
+            }
+        }
+    ],
+    "management" : {
+        "registratedAt" : ISODate("2020-07-01T00:54:54.643Z"),
+        "lastUpdatedAt" : ISODate("2020-07-21T15:52:51.131Z"),
+        "isDisplay" : true
+    }
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5f30de86698cfc4ffce43d21"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "deviceType" : "",
+        "description" : "레인지 (WBEI3GT)",
+        "type" : "WBEI3GT",
+        "deviceId" : "",
+        "serialNo" : "",
+        "manufacturer" : "lge_thinq",
+        "connType" : "",
+        "name" : "레인지 (WBEI3GT)",
+        "category" : "CATEGORY_3",
+        "parentModel" : "LGE_COOKTOP",
+        "firmware" : {
+            "modem" : {
+                "result" : "",
+                "lastUpdated" : "",
+                "fileName" : "",
+                "version" : "",
+                "url" : ""
+            },
+            "mcu" : {
+                "result" : "",
+                "lastUpdated" : "",
+                "fileName" : "",
+                "version" : "",
+                "url" : ""
+            }
+        },
+        "macAddr" : "",
+        "powerType" : ""
+    },
+    "sensor" : {
+        "setting" : {
+            "controllAlarm" : "on"
+        },
+        "leftFront" : {
+            "timer" : {
+                "remainMinute" : 0,
+                "remainHour" : 0
+            },
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "rightFront" : {
+            "timer" : {
+                "remainMinute" : 0,
+                "remainHour" : 0
+            },
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "leftRear" : {
+            "timer" : {
+                "remainMinute" : 0,
+                "remainHour" : 0
+            },
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        }
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.leftFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.rightFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 우측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 우측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 우측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 우측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 우측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 우측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 우측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 우측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 우측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 우측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.leftRear.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 후방 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 후방 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 후방 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 후방 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 후방 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 후방 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다.",
+                    "8" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다.",
+                    "9" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다."
+                }
+            }
+        }
+    ],
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "management" : {
+        "registratedAt" : ISODate("2020-08-10T05:43:34.667Z"),
+        "isDisplay" : true
+    }
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5f30f9ac98edc82494a342ce"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "deviceType" : "",
+        "description" : "레인지 (WBEI3MT)",
+        "type" : "WBEI3MT",
+        "deviceId" : "",
+        "serialNo" : "",
+        "manufacturer" : "lge_thinq",
+        "connType" : "",
+        "name" : "레인지 (WBEI3MT)",
+        "category" : "CATEGORY_3",
+        "parentModel" : "LGE_COOKTOP",
+        "firmware" : {
+            "modem" : {
+                "result" : "",
+                "lastUpdated" : "",
+                "fileName" : "",
+                "version" : "",
+                "url" : ""
+            },
+            "mcu" : {
+                "result" : "",
+                "lastUpdated" : "",
+                "fileName" : "",
+                "version" : "",
+                "url" : ""
+            }
+        },
+        "macAddr" : "",
+        "powerType" : ""
+    },
+    "sensor" : {
+        "setting" : {
+            "controllAlarm" : "on"
+        },
+        "leftFront" : {
+            "timer" : {
+                "remainMinute" : 0,
+                "remainHour" : 0
+            },
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "rightFront" : {
+            "timer" : {
+                "remainMinute" : 0,
+                "remainHour" : 0
+            },
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "leftRear" : {
+            "timer" : {
+                "remainMinute" : 0,
+                "remainHour" : 0
+            },
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.leftFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.rightFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 우측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 우측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 우측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 우측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 우측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 우측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 우측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 우측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 우측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 우측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.leftRear.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 후방 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 후방 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 후방 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 후방 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 후방 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 후방 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 후방 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 후방 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 후방 화구 상태가 9입니다."
+                }
+            }
+        }
+    ],
+    "management" : {
+        "registratedAt" : ISODate("2020-08-10T05:43:34.667Z"),
+        "isDisplay" : true
+    }
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5f34eee0df28056ffc26ec3d"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "LEDHANDLE",
+        "category" : "CATEGORY_4",
+        "type" : "LGH_LEDHANDLE2020A",
+        "name" : "LED 핸들",
+        "description" : "LGH_LEDHANDLE2020A",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "battery",
+        "manufacturer" : "LGH",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "setting" : {},
+        "power" : {
+            "batteryUsage" : ""
+        },
+        "alarm" : {
+            "airGuide" : "",
+            "iaqGuide" : ""
+        },
+        "airCondition" : {
+            "temperature" : "",
+            "humidity" : "",
+            "tvocs" : "",
+            "co2" : ""
+        },
+        "doorStatus" : "",
+        "weather" : {
+            "pm2_5" : "",
+            "pm10" : "",
+            "temperature" : {
+                "highest" : "",
+                "present" : "",
+                "lowest" : ""
+            },
+            "present" : {
+                "sky" : "",
+                "pty" : ""
+            },
+            "forecast" : {
+                "sky" : "",
+                "pty" : ""
+            }
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.doorStatus",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "open" : "LED핸들({name}) 문이 열렸습니다.",
+                    "close" : "LED핸들({name}) 문이 닫혔습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.alarm.airGuide",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "HCN11" : "LED핸들({name}) HCN01 경고",
+                    "HCN12" : "LED핸들({name}) HCN02 경고",
+                    "HCN13" : "LED핸들({name}) HCN04 경고"
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.alarm.iaqGuide",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "IAQ01" : "실내공기가 좋지 않아요. 공기질 관리에 유의해주세요. (LED핸들:{name})",
+                    "IAQ02" : "LED핸들({name}) IAQ02 경고",
+                    "IAQ03" : "LED핸들({name}) IAQ03 경고",
+                    "IAQ04" : "LED핸들({name}) IAQ04 경고"
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.power.batteryUsage",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "alert",
+                "min" : 15,
+                "minMessage" : "LED핸들({name})의 베터리 잔량이 15% 이하 입니다. (현재 : {value})"
+            }
+        }, 
+        {
+            "attr" : "sensor.airCondition.temperature",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.humidity",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.tvocs",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.co2",
+            "isPush" : false,
+            "trendType" : "state"
+        }
+    ],
+    "management" : {
+        "isDisplay" : true,
+        "registratedAt" : ISODate("2020-07-01T00:54:54.643Z"),
+        "lastUpdatedAt" : ISODate("2020-09-15T07:26:42.683Z")
+    }
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5f57326ddf28053c84670870"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "SMARTVENTIL",
+        "category" : "CATEGORY_2",
+        "type" : "LGH_SMARTVENTIL2020A",
+        "name" : "환기창",
+        "description" : "환기창",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "electric",
+        "manufacturer" : "LGH",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "setting" : {},
+        "power" : {
+            "batteryUsage" : "",
+            "status" : "",
+            "usageTime" : ""
+        },
+        "alarm" : {
+            "changeSensor" : "",
+            "cleanSensor" : "",
+            "changeFilter" : ""
+        },
+        "mode" : "",
+        "timer" : {
+            "status" : "",
+            "hour" : "",
+            "remainHour" : "",
+            "startTime" : ""
+        },
+        "lamp" : {
+            "status" : ""
+        },
+        "fan" : {
+            "fanSpeed" : ""
+        },
+        "filter" : {
+            "filterLifeTime" : "",
+            "filterUsageTime" : "",
+            "cleanLifeTime" : "",
+            "cleanUsageTime" : ""
+        },
+        "heatExchanger" : {
+            "lifeTime" : "",
+            "usageTime" : ""
+        },
+        "airCondition" : {
+            "co2" : "",
+            "pm2_5" : "",
+            "tvocs" : "",
+            "temperature" : "",
+            "humidity" : ""
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.power.status",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "전원",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "off" : "환기창({name})이 꺼졌습니다.",
+                    "on" : "환기창({name})이 켜졌습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.mode",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "1" : "환기창({name})이 강제 배기 모드로 변경되었습니다.",
+                    "2" : "환기창({name})이 자동 모드로 변경되었습니다.",
+                    "3" : "환기창({name})이 터보 모드로 변경되었습니다.",
+                    "4" : "환기창({name})이 취침 모드로 변경되었습니다.",
+                    "5" : "환기창({name})이 풍량 모드로 변경되었습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.fan.fanSpeed",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "value",
+                "message" : "환기창({name})의 Fan Speed가 변경 되었습니다. (현재 : {value})"
+            }
+        }, 
+        {
+            "attr" : "sensor.power.usageTime",
+            "isPush" : false,
+            "trendType" : "value"
+        }, 
+        {
+            "attr" : "sensor.airCondition.co2",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.pm2_5",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.tvocs",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.temperature",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.humidity",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.filter.filterLifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.filter.filterUsageTime",
+            "compare" : "sensor.filter.filterLifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "환기창({name})의 필터 교체가 필요합니다."
+            }
+        }, 
+        {
+            "attr" : "sensor.filter.cleanLifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.filter.cleanUsageTime",
+            "compare" : "sensor.filter.cleanLifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "환기창({name})의 필터 청소가 필요합니다."
+            }
+        }, 
+        {
+            "attr" : "sensor.heatExchanger.lifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.heatExchanger.usageTime",
+            "compare" : "sensor.heatExchanger.lifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "환기창({name})의 센서 교체가 필요합니다."
+            }
+        }
+    ],
+    "management" : {
+        "isDisplay" : true,
+        "registratedAt" : ISODate("2020-07-01T00:54:54.643Z"),
+        "lastUpdatedAt" : ISODate("2020-09-15T07:26:42.683Z")
+    }
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5f167c17206a332f38763097"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "SMARTHOOD",
+        "category" : "CATEGORY_1",
+        "type" : "LGH_SMARTHOOD2020A",
+        "name" : "스마트후드",
+        "description" : "LGH_SMARTHOOD2020A",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "",
+        "manufacturer" : "LGH",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "power" : {
+            "batteryUsage" : "",
+            "status" : "",
+            "usageTime" : ""
+        },
+        "alarm" : {
+            "controllAlarm" : ""
+        },
+        "fan" : {
+            "fanSpeed" : 0
+        },
+        "timer" : {
+            "status" : "",
+            "minute" : "",
+            "remainMinute" : "",
+            "startTime" : ""
+        },
+        "lamp" : {
+            "status" : ""
+        },
+        "filter" : {
+            "lifeTime" : "",
+            "usageTime" : ""
+        },
+        "setting" : {
+            "filterPush" : true
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.power.status",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "전원",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "off" : "스마트후드({name})가 꺼졌습니다.",
+                    "on" : "스마트후드({name})가 켜졌습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.power.usageTime",
+            "isPush" : false,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "value",
+            "push" : {
+                "type" : "value",
+                "message" : "스마트후드({name})의 사용시간이 변경 되었습니다. (현재 : {value})"
+            }
+        }, 
+        {
+            "attr" : "sensor.fan.fanSpeed",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "value",
+                "message" : "스마트후드({name})의 Fan Speed가 변경 되었습니다. (현재 : {value})"
+            }
+        }, 
+        {
+            "attr" : "sensor.lamp.status",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "off" : "스마트후드({name})의 LED가 꺼졌습니다.",
+                    "on" : "스마트후드({name})의 LED가 켜졌습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.filter.lifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.filter.usageTime",
+            "compare" : "sensor.filter.lifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "스마트후드({name})의 필터 교체가 필요합니다."
+            }
+        }
+    ],
+    "management" : {
+        "isDisplay" : true,
+        "registratedAt" : ISODate("2020-07-01T00:54:54.643Z"),
+        "lastUpdatedAt" : ISODate("2020-09-15T07:26:42.683Z")
+    }
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5f167c17206a332f38763092"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "_parent",
+        "category" : "CATEGORY_2",
+        "type" : "SMARTVENTIL",
+        "name" : "",
+        "description" : "환기창",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "electric",
+        "manufacturer" : "LGH",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "setting" : {},
+        "power" : {
+            "batteryUsage" : "",
+            "status" : "",
+            "usageTime" : ""
+        },
+        "alarm" : {
+            "changeSensor" : "",
+            "cleanSensor" : "",
+            "changeFilter" : ""
+        },
+        "mode" : "",
+        "timer" : {
+            "status" : "",
+            "hour" : "",
+            "remainHour" : "",
+            "startTime" : ""
+        },
+        "lamp" : {
+            "status" : ""
+        },
+        "fan" : {
+            "fanSpeed" : ""
+        },
+        "filter" : {
+            "status" : "",
+            "filterLifeTime" : "",
+            "filterUsageTime" : "",
+            "cleanLifeTime" : "",
+            "cleanUsageTime" : ""
+        },
+        "heatExchanger" : {
+            "status" : "",
+            "lifeTime" : "",
+            "usageTime" : ""
+        },
+        "airCondition" : {
+            "co2" : "",
+            "pm2_5" : "",
+            "tvocs" : "",
+            "temperature" : "",
+            "humidity" : ""
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.power.status",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "전원",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "off" : "환기창({name})이 꺼졌습니다.",
+                    "on" : "환기창({name})이 켜졌습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.mode",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "1" : "환기창({name})이 강제 배기 모드로 변경되었습니다.",
+                    "2" : "환기창({name})이 자동 모드로 변경되었습니다.",
+                    "3" : "환기창({name})이 터보 모드로 변경되었습니다.",
+                    "4" : "환기창({name})이 취침 모드로 변경되었습니다.",
+                    "5" : "환기창({name})이 풍량 모드로 변경되었습니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.fan.fanSpeed",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "value",
+                "message" : "환기창({name})의 Fan Speed가 변경 되었습니다. (현재 : {value})"
+            }
+        }, 
+        {
+            "attr" : "sensor.power.usageTime",
+            "isPush" : false,
+            "trendType" : "value"
+        }, 
+        {
+            "attr" : "sensor.airCondition.co2",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.pm2_5",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.tvocs",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.temperature",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.airCondition.humidity",
+            "isPush" : false,
+            "trendType" : "state"
+        }, 
+        {
+            "attr" : "sensor.filter.filterLifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.filter.filterUsageTime",
+            "compare" : "sensor.filter.filterLifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "환기창({name})의 필터 교체가 필요합니다."
+            }
+        }, 
+        {
+            "attr" : "sensor.filter.cleanLifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.filter.cleanUsageTime",
+            "compare" : "sensor.filter.cleanLifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "환기창({name})의 필터 청소가 필요합니다."
+            }
+        }, 
+        {
+            "attr" : "sensor.heatExchanger.lifeTime",
+            "category" : "센서",
+            "trendType" : "state",
+            "isPush" : false,
+            "pushType" : "filter"
+        }, 
+        {
+            "attr" : "sensor.heatExchanger.usageTime",
+            "compare" : "sensor.heatExchanger.lifeTime",
+            "isPush" : false,
+            "pushType" : "filter",
+            "category" : "센서",
+            "trendType" : "state",
+            "push" : {
+                "type" : "event",
+                "message" : "환기창({name})의 센서 교체가 필요합니다."
+            }
+        }
+    ],
+    "management" : {
+        "isDisplay" : false,
+        "registratedAt" : null,
+        "lastUpdatedAt" : null
+    }
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5f167c17206a332f38763098"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "_parent",
+        "category" : "CATEGORY_3",
+        "type" : "LGE_COOKTOP",
+        "name" : "",
+        "description" : "LG전자 전기레인지",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "",
+        "manufacturer" : "lge_thinq",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "setting" : {
+            "controllAlarm" : "on"
+        },
+        "leftFront" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "rightFront" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "leftRear" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.leftFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.rightFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 우측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 우측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 우측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 우측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 우측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 우측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 우측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 우측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 우측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 우측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.leftRear.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 후방 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 후방 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 후방 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 후방 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 후방 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 후방 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 후방 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 후방 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 후방 화구 상태가 9입니다."
+                }
+            }
+        }
+    ],
+    "management" : {
+        "isDisplay" : true,
+        "registratedAt" : null,
+        "lastUpdatedAt" : null
+    }
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5f167c18206a332f3876309d"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "LGE_COOKTOP",
+        "category" : "CATEGORY_3",
+        "type" : "WBEF3MT",
+        "name" : "레인지 (WBEF3MT)",
+        "description" : "레인지 (WBEF3MT)",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "",
+        "manufacturer" : "lge_thinq",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "setting" : {
+            "controllAlarm" : "on"
+        },
+        "leftFront" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "rightFront" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        },
+        "leftRear" : {
+            "cookingZone" : {
+                "currentState" : "INITIAL"
+            },
+            "power" : {
+                "powerLevel" : 0
+            },
+            "timer" : {
+                "remainHour" : 0,
+                "remainMinute" : 0
+            },
+            "remoteControlEnable" : {
+                "remoteControlEnabled" : false
+            }
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.leftFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 좌측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.rightFront.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 우측 정면 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 우측 정면 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 우측 정면 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 우측 정면 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 우측 정면 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 우측 정면 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 우측 정면 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 우측 정면 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 우측 정면 화구 상태가 8입니다.",
+                    "9" : "전기레인지({name})의 우측 정면 화구 상태가 9입니다."
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.leftRear.power.powerLevel",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "제어",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "0" : "전기레인지({name})의 좌측 후방 화구가 꺼졌습니다.",
+                    "1" : "전기레인지({name})의 좌측 후방 화구 상태가 1입니다.",
+                    "2" : "전기레인지({name})의 좌측 후방 화구 상태가 2입니다.",
+                    "3" : "전기레인지({name})의 좌측 후방 화구 상태가 3입니다.",
+                    "4" : "전기레인지({name})의 좌측 후방 화구 상태가 4입니다.",
+                    "5" : "전기레인지({name})의 좌측 후방 화구 상태가 5입니다.",
+                    "6" : "전기레인지({name})의 좌측 후방 화구 상태가 6입니다.",
+                    "7" : "전기레인지({name})의 좌측 후방 화구 상태가 7입니다.",
+                    "8" : "전기레인지({name})의 좌측 후방 화구 상태가 8입니다.",
+                    "9" : "좌전기레인지({name})의 측 후방 화구 상태가 9입니다."
+                }
+            }
+        }
+    ],
+    "management" : {
+        "registratedAt" : ISODate("2020-07-01T00:54:54.643Z"),
+        "lastUpdatedAt" : ISODate("2020-07-21T15:52:58.823Z"),
+        "isDisplay" : true
+    }
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5f34ee7119e903540414a947"),
+    "createdAt" : null,
+    "activateAt" : null,
+    "isActivate" : false,
+    "lastUpdatedAt" : null,
+    "device" : {
+        "parentModel" : "_parent",
+        "category" : "CATEGORY_4",
+        "type" : "LEDHANDLE",
+        "name" : "",
+        "description" : "LED 핸들",
+        "deviceId" : "",
+        "deviceType" : "",
+        "connType" : "",
+        "macAddr" : "",
+        "serialNo" : "",
+        "powerType" : "battery",
+        "manufacturer" : "LGH",
+        "firmware" : {
+            "mcu" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            },
+            "modem" : {
+                "version" : "",
+                "url" : "",
+                "fileName" : "",
+                "lastUpdated" : "",
+                "result" : ""
+            }
+        }
+    },
+    "sensor" : {
+        "setting" : {},
+        "power" : {
+            "batteryUsage" : ""
+        },
+        "alarm" : {
+            "airGuide" : "",
+            "iaqGuide" : ""
+        },
+        "airCondition" : {
+            "temperature" : "",
+            "humidity" : "",
+            "tvocs" : "",
+            "co2" : ""
+        },
+        "doorStatus" : "",
+        "weather" : {
+            "pm2_5" : "",
+            "pm10" : "",
+            "temperature" : {
+                "highest" : "",
+                "present" : "",
+                "lowest" : ""
+            },
+            "present" : {
+                "sky" : "",
+                "pty" : ""
+            },
+            "forecast" : {
+                "sky" : "",
+                "pty" : ""
+            }
+        }
+    },
+    "link" : {
+        "autoMode" : "off",
+        "targetDeviceId" : "",
+        "event" : {}
+    },
+    "linked" : {
+        "sourceDeviceId" : "",
+        "event" : {}
+    },
+    "trigger" : [ 
+        {
+            "attr" : "sensor.alarm.airGuide",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "HCN11" : "LED핸들({name}) HCN11 경고",
+                    "HCN12" : "LED핸들({name}) HCN12 경고",
+                    "HCN13" : "LED핸들({name}) HCN14 경고"
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.alarm.iaqGuide",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "string",
+            "push" : {
+                "type" : "enum",
+                "enumList" : {
+                    "IAQ01" : "LED핸들({name}) IAQ01 경고",
+                    "IAQ02" : "LED핸들({name}) IAQ02 경고",
+                    "IAQ03" : "LED핸들({name}) IAQ03 경고",
+                    "IAQ04" : "LED핸들({name}) IAQ04 경고"
+                }
+            }
+        }, 
+        {
+            "attr" : "sensor.power.batteryUsage",
+            "isPush" : true,
+            "pushType" : "device",
+            "category" : "센서",
+            "trendType" : "string",
+            "push" : {
+                "type" : "alert",
+                "min" : 15,
+                "minMessage" : "LED핸들({name})의 베터리 잔량이 15% 이하 입니다. (현재 : {value})"
+            }
+        }
+    ],
+    "management" : {
+        "isDisplay" : false,
+        "registratedAt" : null,
+        "lastUpdatedAt" : null
+    }
+}

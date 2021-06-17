@@ -1,0 +1,5 @@
+20201007 디바이스 푸쉬 목록 확인
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/user/5f6d9a2d10ddc50018653057/push' \
+curl 'http://localhost:3001/api/v1/user/5f6d9a2d10ddc50018653057/push' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxOTcwNzkwNDQxIiwibmlja25hbWUiOiLsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE5NzA3OTB9.4TsV23NnRNHOGd9yLCeLwF_6Eg4p8yjrMmJcjTbIcow' \
+  --compressed

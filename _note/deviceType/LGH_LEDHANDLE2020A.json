@@ -1,0 +1,124 @@
+{
+  "_id": "5f34eee0df28056ffc26ec3d",
+  "createdAt": null,
+  "activateAt": null,
+  "isActivate": false,
+  "lastUpdatedAt": null,
+  "device": {
+    "parentModel": "LEDHANDLE",
+    "category": "CATEGORY_4",
+    "type": "LGH_LEDHANDLE2020A",
+    "name": "LED 핸들",
+    "description": "LED 핸들 LGH_LEDHANDLE2020A",
+    "deviceId": "",
+    "deviceType": "",
+    "connType": "",
+    "macAddr": "",
+    "serialNo": "",
+    "powerType": "battery", // 오타 수정
+    "manufacturer": "LGH",
+    "firmware": {
+      "mcu": {
+        "version": "",
+        "url": "",
+        "fileName": "",
+        "lastUpdated": "",
+        "result": ""
+      },
+      "modem": {
+        "version": "",
+        "url": "",
+        "fileName": "",
+        "lastUpdated": "",
+        "result": ""
+      }
+    }
+  },
+  "sensor": {
+    "power": {
+      "batteryUsage": "",
+      "status": "" // 삭제
+    },
+    "alarm": {
+      "airGuide": "", // 환기 관련 가이드 (창문을 여세요, 닫으세요, 창문 개폐 관련 가이드),     HCN01 -> 항상 값을 줌, 하지만 푸쉬를 뺄 예정
+      "iaqGuide": "" // in door air qul. (내부 실내 질이 않 좋아졌을 때)                IAQ1 -> 변경 되었을 때 만
+    },
+    "airCondition": {
+      "temperature": "",
+      "humidity": "",
+      "tvocs": "", //0.5 ppb (둘째 자리 반올림)
+      "co2": ""
+    },
+    "doorStatus": "",
+    "weather": {
+      "pm2_5": "",
+      "pm10": "",
+      "temperature": {
+        "highest": "",
+        "present": "",
+        "lowest": ""
+      },
+      "present": {
+        "sky": "",
+        "pty": ""
+      },
+      "forecast": {
+        "sky": "",
+        "pty": ""
+      }
+    }
+  },
+  "link": {
+    "autoMode": "off",
+    "targetDeviceId": "",
+    "event": {}
+  },
+  "linked": {
+    "sourceDeviceId": "",
+    "event": {}
+  },
+  "trigger": [
+    {
+      "attr": "sensor.alarm.airGuide",
+      "isPush": true,
+      "category": "센서",
+      "push": {
+        "type": "enum",
+        "enumList": {
+          "HCN11": "HCN11 경고",
+          "HCN12": "HCN12 경고",
+          "HCN13": "HCN14 경고"
+        }
+      }
+    },
+    {
+      "attr": "sensor.alarm.iaqGuide",
+      "isPush": true,
+      "category": "센서",
+      "push": {
+        "type": "enum",
+        "enumList": {
+          "IAQ01": "IAQ01 경고",
+          "IAQ02": "IAQ02 경고",
+          "IAQ03": "IAQ03 경고",
+          "IAQ04": "IAQ04 경고"
+        }
+      }
+    },
+    {
+      "attr": "sensor.power.batteryUsage",
+      "isPush": true,
+      "category": "센서",
+      "push": {
+        "type": "alert",
+        "min": 15,
+        "minMessage": "베터리 잔량이 15% 이하 입니다. (현재 : {value})"
+      }
+    }
+  ],
+  "management": {
+    "isDisplay": false,
+    "registratedAt": null,
+    "lastUpdatedAt": null
+  }
+}

@@ -1,0 +1,31 @@
+20201007 펌웨어 업데이트 테스트
+
+펌웨어 정보 조회
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/device/5f50846bb1b9c10018c452c7/firmware' \
+curl 'http://localhost:3001/api/v1/device/5f50846bb1b9c10018c452c7/firmware' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZkOWEyZDEwZGRjNTAwMTg2NTMwNTciLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAxOTcwNzkwNDQxIiwibmlja25hbWUiOiLsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDE5NzA3OTB9.4TsV23NnRNHOGd9yLCeLwF_6Eg4p8yjrMmJcjTbIcow' \
+  --compressed
+{
+	"mcu": {
+		"version": "0.1.0",
+		"latestVersion": "0.1.0",
+		"lastUpdated": "",
+		"result": ""
+	},
+	"modem": {
+		"version": "0.9.6.3",
+		"latestVersion": "2.0",
+		"lastUpdated": "",
+		"result": ""
+	}
+}
+
+펌웨어 업데이트 요청
+curl "https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/device/5f50846bb1b9c10018c452c7/firmware/modem"  -X 'PUT' \
+curl "http://localhost:3001/api/v1/device/5f50846bb1b9c10018c452c7/firmware/modem"  -X 'PUT' \
+  -H "Connection: keep-alive" \
+  -H "Accept: application/json, text/plain, */*" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNiNzRiNjc3YTY1YzAwMTlmMTY5ZTYiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMTk3MTM1NTk5MCIsIm5pY2tuYW1lIjoi7JeY66CBIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNjAxOTcxMzU1fQ.0-psFGzEHZrRq05ZdFZEvn-Vx7j1aQaWW94FnaJAXak" \
+  --compressed
+
+

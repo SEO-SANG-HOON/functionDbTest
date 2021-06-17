@@ -1,0 +1,43 @@
+{
+    "documents": [
+        {
+            "address": {
+                "address_name": "서울 강서구 마곡동 771-2",
+                "b_code": "1150010500",
+                "h_code": "1150060300",
+                "main_address_no": "771",
+                "mountain_yn": "N",
+                "region_1depth_name": "서울",
+                "region_2depth_name": "강서구",
+                "region_3depth_h_name": "가양1동",
+                "region_3depth_name": "마곡동",
+                "sub_address_no": "2",
+                "x": "126.829585666831",
+                "y": "37.561307709942"
+            },
+            "address_name": "서울 강서구 마곡동 771-2",
+            "address_type": "REGION_ADDR",
+            "road_address": {
+                "address_name": "서울 강서구 마곡중앙8로 20",
+                "building_name": "희성엘티빌딩",
+                "main_building_no": "20",
+                "region_1depth_name": "서울",
+                "region_2depth_name": "강서구",
+                "region_3depth_name": "마곡동",
+                "road_name": "마곡중앙8로",
+                "sub_building_no": "",
+                "underground_yn": "N",
+                "x": "126.829585666831",
+                "y": "37.561307709942",
+                "zone_no": "07801"
+            },
+            "x": "126.829585666831",
+            "y": "37.561307709942"
+        }
+    ],
+    "meta": {
+        "is_end": true,
+        "pageable_count": 1,
+        "total_count": 1
+    }
+}

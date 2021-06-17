@@ -1,0 +1,16 @@
+2020-08-31 04:44:19 info:   <-- POST /thinq/callback
+2020-08-31 04:44:19 error: CALLBACK_BODY : {"messageId":"SwtntJtuQyKAlabyH02jOw","timestamp":"2020-08-31T04:44:16.217000","event":{"pushType":"DEVICE_STATUS","serviceId":"0aba60a59ca93a758b22a148","deviceId":"706c41cef888766f975d2249aa35820d1c9815346445e3935615fe880c200fd4","userList":["KR1802271482699"],"report":[{"location":{"locationName":"LEFT_FRONT"},"cookingZone":{"currentState":"INITIAL"},"power":{"powerLevel":0},"timer":{"remainHour":0,"remainMinute":0},"remoteControlEnable":{"remoteControlEnabled":false}},{"location":{"locationName":"RIGHT_FRONT"},"cookingZone":{"currentState":"INITIAL"},"power":{"powerLevel":0},"timer":{"remainHour":0,"remainMinute":0},"remoteControlEnable":{"remoteControlEnabled":false}},{"location":{"locationName":"LEFT_REAR"},"cookingZone":{"currentState":"INITIAL"},"power":{"powerLevel":0},"timer":{"remainHour":0,"remainMinute":0},"remoteControlEnable":{"remoteControlEnabled":false}}],"deviceType":"DEVICE_COOKTOP"}}
+2020-08-31 04:44:21 info:   --> POST /thinq/callback 200 1,253ms 15b
+    at Request.plumbing.callback (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/plumbing.js:87:29)
+    at Request.RP$callback [as _callback] (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/plumbing.js:46:31)
+    at self.callback (/usr/src/app/node_modules/request/request.js:185:22)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Request.plumbing.callback (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/plumbing.js:104:33)
+    at Request.RP$callback [as _callback] (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/plumbing.js:46:31)
+    at Request.self.callback (/usr/src/app/node_modules/request/request.js:185:22)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Request.plumbing.callback (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/plumbing.js:104:33)
+    at Request.RP$callback [as _callback] (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/plumbing.js:46:31)
+    at Request.self.callback (/usr/src/app/node_modules/request/request.js:185:22)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)

@@ -1,0 +1,50 @@
+db.getCollection('places').aggregate([
+    {
+        $match: { _id: ObjectId("5d48ca3b6ac488003c916ca4")}
+    },
+    {
+        $project: {
+            _id: 1,
+            placeIndex: 1,
+            placeName: 1,
+            ownerId: 1,
+            placeNicknames: 1,
+            isDefault: 1,
+            accessibles: 1,
+            location: 1,
+            "rooms.roomName": 1
+        }
+    },
+])
+
+/* 1 */
+{
+    "_id" : ObjectId("5d48ca3b6ac488003c916ca4"),
+    "placeIndex" : 0,
+    "placeName" : "우리집",
+    "ownerId" : "5d48ca336ac488003c916ca3",
+    "placeNicknames" : [ "우리집", "Home" ],
+    "isDefault" : true,
+    "accessibles" : [ 
+        "5d48ca336ac488003c916ca3", 
+        "5d47dfdd6ac488003c916c96", 
+        "5d48e8af6ac488003c916d13"
+    ],
+    "location" : {
+        "address" : "인천 서구 청라에메랄드로76번길 14\n157",
+        "postCode" : "22739",
+        "origin" : "U2FsdGVkX1/Jh8tpZJkAgrB+7ZNI2nCLgnV448FUcwar8BA8x1d4mEf4onFy5Fxj/Eq97dwZqnnClkWmQKummg==",
+        "gridKey" : "060-120"
+    },
+    "rooms" : [ 
+        {
+            "roomName" : "현관",
+        }, 
+        {
+            "roomName" : "화장실",
+        }, 
+        {
+            "roomName" : "거실",
+        }
+    ]
+}

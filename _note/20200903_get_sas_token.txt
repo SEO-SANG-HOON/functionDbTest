@@ -1,0 +1,36 @@
+[bash]
+get_sas_token() {
+    local EVENTHUB_URI=$1
+    local SHARED_ACCESS_KEY_NAME=$2
+    local SHARED_ACCESS_KEY=$3
+    local EXPIRY=${EXPIRY:=$((60 * 60 * 24))} # Default token expiry is 1 day
+
+    local ENCODED_URI=$(echo -n $EVENTHUB_URI | jq -s -R -r @uri)
+    local TTL=$(($(date +%s) + $EXPIRY))
+    local UTF8_SIGNATURE=$(printf "%s\n%s" $ENCODED_URI $TTL | iconv -t utf8)
+
+    local HASH=$(echo -n "$UTF8_SIGNATURE" | openssl sha256 -hmac $SHARED_ACCESS_KEY -binary | base64)
+    local ENCODED_HASH=$(echo -n $HASH | jq -s -R -r @uri)
+
+    echo -n "SharedAccessSignature sr=$ENCODED_URI&sig=$ENCODED_HASH&se=$TTL&skn=$SHARED_ACCESS_KEY_NAME"
+}
+
+====================
+mosquitto_sub -d -h zinfwiothubdev.azure-devices.net -i 5de70e8020ab771123089f30-u "zinfwiothubdev.azure-devices.net/5de70e8020ab771123089f30" -P "SharedAccessSignature sr=zinfwiothubdev.azure-devices.net%2F......&sig=.....%3D&se=..." -t "devices/5de70e8020ab771123089f30/messages/devicebound/#" -p 8883 --cafile /etc/ssl/certs/ca-bundle.crt -V mqttv311
+mosquitto_sub -d -h zinfwiothubdev.azure-devices.net -i 5de70e8020ab771123089f30-u "zinfwiothubdev.azure-devices.net/5de70e8020ab771123089f30" -P "SharedAccessSignature sr=zinfwiothubdev.azure-devices.net%2F......&sig=.....%3D&se=..." -t "devices/5de70e8020ab771123089f30/messages/devicebound/#" -p 8883  -V mqttv311
+
+mosquitto_sub -h zinfwiothubdev.azure-devices.net -p 8883 -t "devices/5de70e8020ab771123089f30/messages/devicebound/#" -i 5de70e8020ab771123089f30 -u "zinfwiothubdev.azure-devices.net/5de70e8020ab771123089f30" -P "SharedAccessSignature sr=zinfwiothubdev.azure-devices.net&sig=snip&skn=snip" --capath /etc/ssl/certs/ --tls-version tlsv1 -d -V mqttv311 -q 1
+mosquitto_sub -h zinfwiothubdev.azure-devices.net -p 8883 -t "devices/5de70e8020ab771123089f30/messages/devicebound/#" -i 5de70e8020ab771123089f30 -u "zinfwiothubdev.azure-devices.net/5de70e8020ab771123089f30" -P "SharedAccessSignature sr=zinfwiothubdev.azure-devices.net&sig=snip&skn=snip" --tls-version tlsv1 -d -V mqttv311 -q 1
+====================
+
+
+
+az extension add --name azure-cli-iot-ext
+az iot hub generate-sas-token -d {device_id} -n {iothub_name}
+az iot hub generate-sas-token -d 5de70e8020ab771123089f30 -n zinfwiothubdev
+{
+  "sas": "SharedAccessSignature sr=zinfwiothubdev.azure-devices.net%2Fdevices%2F5de70e8020ab771123089f30&sig=vbftkjT9QyrpsJ2WiPDjYM8%2FpxO4HjZKjzcWNIBFUsQ%3D&se=1599096496"
+}
+
+mosquitto_sub -h zinfwiothubdev.azure-devices.net -p 8883 -t "devices/5de70e8020ab771123089f30/messages/devicebound/#" -i 5de70e8020ab771123089f30 -u "zinfwiothubdev.azure-devices.net/5de70e8020ab771123089f30" -P "SharedAccessSignature sr=zinfwiothubdev.azure-devices.net%2Fdevices%2F5de70e8020ab771123089f30&sig=vbftkjT9QyrpsJ2WiPDjYM8%2FpxO4HjZKjzcWNIBFUsQ%3D&se=1599096496" --capath /etc/ssl/certs/ --tls-version tlsv1 -d -V mqttv311 -q 1
+

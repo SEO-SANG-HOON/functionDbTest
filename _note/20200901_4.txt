@@ -1,0 +1,8 @@
+
+2020-08-31 10:10:51 info:   <-- DELETE /api/v1/user/5f48a165a3827c00181c5a13
+2020-08-31 10:10:51 info: USER TOKEN 5d412acde5c1f55bf9e3f793
+2020-08-31 10:10:51 error: Wrong session token 5d412acde5c1f55bf9e3f793 or broken token
+2020-08-31 10:10:51 error: deleteUser: error.
+2020-08-31 10:10:51 error: Forbidden
+2020-08-31 10:10:51 info:   --> DELETE /api/v1/user/5f48a165a3827c00181c5a13 403 6ms 96b
+^C%

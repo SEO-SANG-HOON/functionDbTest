@@ -1,0 +1,2 @@
+20201027
+kubectl --request-timeout 1h --insecure-skip-tls-verify cp deploy-zinfw-dev-batch-59d56c469c-hgjtd:/usr/src/app/download ./

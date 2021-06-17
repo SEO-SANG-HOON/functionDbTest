@@ -1,0 +1,91 @@
+{
+  "_id": "5f167c17206a332f38763092",
+  "createdAt": null,
+  "activateAt": null,
+  "isActivate": false,
+  "lastUpdatedAt": null,
+  "device": {
+    "parentModel": "SAMRTVENTIL",
+    "category": "CATEGORY_2",
+    "type": "LGH_SAMRTVENTIL2020A",
+    "name": "환기창",
+    "description": "환기창",
+    "deviceId": "",
+    "deviceType": "",
+    "connType": "",
+    "macAddr": "",
+    "serialNo": "",
+    "powerType": "electric",
+    "manufacturer": "LGH",
+    "firmware": {
+      "mcu": {
+        "version": "",
+        "url": "",
+        "fileName": "",
+        "lastUpdated": "",
+        "result": ""
+      },
+      "modem": {
+        "version": "",
+        "url": "",
+        "fileName": "",
+        "lastUpdated": "",
+        "result": ""
+      }
+    }
+  },
+  "sensor": {
+    "power": {
+      "batteryUsage": "",
+      "status": "",
+      "usageTime": ""
+    },
+    "alarm": {
+      "changeSensor": "",
+      "cleanSensor": "",
+      "changeFilter": ""
+    },
+    "mode": "",
+    "timer": {
+      "status": "",
+      "minute": "",
+      "remainMinute": "",
+      "startTime": ""
+    },
+    "fan": {
+      "fanSpeed": ""
+    },
+    "filter": {
+      "filterLifeTime": "",
+      "filterUsageTime": "",
+      "cleanLifeTime": "",
+      "cleanUsageTime": ""
+    },
+    "heatExchanger": {
+      "lifeTime": "",
+      "usageTime": ""
+    },
+    "airCondition": {
+      "co2": "",
+      "pm2_5": "",
+      "tvocs": "", // ppm
+      "temperature": "",
+      "humidity": ""
+    }
+  },
+  "link": {
+    "autoMode": "off",
+    "targetDeviceId": "",
+    "event": {}
+  },
+  "linked": {
+    "sourceDeviceId": "",
+    "event": {}
+  },
+  "trigger": [],
+  "management": {
+    "isDisplay": false,
+    "registratedAt": null,
+    "lastUpdatedAt": null
+  }
+}

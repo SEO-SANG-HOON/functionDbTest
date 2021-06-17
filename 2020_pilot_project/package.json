@@ -1,0 +1,19 @@
+{
+  "name": "eventHubSample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/event-hubs": "^5.3.0",
+    "@azure/eventhubs-checkpointstore-blob": "^1.0.1",
+    "@azure/storage-blob": "^12.2.1",
+    "azure-iothub": "^1.13.1",
+    "mongodb": "^3.6.2"
+  }
+}

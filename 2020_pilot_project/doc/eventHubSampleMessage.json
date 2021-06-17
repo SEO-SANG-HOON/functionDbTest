@@ -1,0 +1,127 @@
+{
+	"body": {
+		"version": 225,
+		"properties": {
+			"desired": {
+				"operation": "updated",
+				"sensor": {
+					"weather": {
+						"weather": {
+							"temperature": {
+								"highest": 14,
+								"present": 14,
+								"lowest": 5
+							},
+							"present": {
+								"sky": 3,
+								"pty": 0
+							},
+							"forecast": {
+								"sky": 3,
+								"pty": 0
+							}
+						}
+					}
+				},
+				"$metadata": {
+					"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+					"$lastUpdatedVersion": 221,
+					"operation": {
+						"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+						"$lastUpdatedVersion": 221
+					},
+					"sensor": {
+						"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+						"$lastUpdatedVersion": 221,
+						"weather": {
+							"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+							"$lastUpdatedVersion": 221,
+							"weather": {
+								"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+								"$lastUpdatedVersion": 221,
+								"temperature": {
+									"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+									"$lastUpdatedVersion": 221,
+									"highest": {
+										"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+										"$lastUpdatedVersion": 221
+									},
+									"present": {
+										"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+										"$lastUpdatedVersion": 221
+									},
+									"lowest": {
+										"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+										"$lastUpdatedVersion": 221
+									}
+								},
+								"present": {
+									"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+									"$lastUpdatedVersion": 221,
+									"sky": {
+										"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+										"$lastUpdatedVersion": 221
+									},
+									"pty": {
+										"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+										"$lastUpdatedVersion": 221
+									}
+								},
+								"forecast": {
+									"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+									"$lastUpdatedVersion": 221,
+									"sky": {
+										"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+										"$lastUpdatedVersion": 221
+									},
+									"pty": {
+										"$lastUpdated": "2020-11-05T09:05:00.357732Z",
+										"$lastUpdatedVersion": 221
+									}
+								}
+							}
+						}
+					}
+				},
+				"$version": 221
+			}
+		}
+	},
+	"properties": {
+		"hubName": "zinfwiothubdev",
+		"deviceId": "5f968214365b320018cdd703",
+		"operationTimestamp": "2020-11-05T09:05:00.3577320Z",
+		"iothub-message-schema": "twinChangeNotification",
+		"opType": "updateTwin"
+	},
+	"offset": "462000",
+	"sequenceNumber": 567,
+	"enqueuedTimeUtc": "2020-11-05T09:05:00.642Z",
+	"systemProperties": {
+		"iothub-connection-device-id": "5f968214365b320018cdd703",
+		"iothub-enqueuedtime": 1604567100363,
+		"iothub-message-source": "twinChangeEvents",
+		"userId": {
+			"type": "Buffer",
+			"data": [
+				122,
+				105,
+				110,
+				102,
+				119,
+				105,
+				111,
+				116,
+				104,
+				117,
+				98,
+				100,
+				101,
+				118
+			]
+		},
+		"correlationId": "221e56369ee9",
+		"contentType": "application/json",
+		"contentEncoding": "utf-8"
+	}
+}

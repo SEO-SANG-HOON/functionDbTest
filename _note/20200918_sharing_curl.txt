@@ -1,0 +1,79 @@
+
+쉐어링 번호 생성
+curl 'http://192.168.219.100:3001/api/v1/sharing?placeId=5f5aeca4c52c4f00186c41a8' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwOTAyZWIwM2VkMzAwMTg4NzNhMDIiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwNDA1NDg3MzIwIiwibmlja25hbWUiOiLsp4DsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDA0MDU0ODd9.5hrhA9xgajwyxEt1hbrFfudKfkWl_jHclq03gCiqZeA' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=utf-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --compressed | jq
+
+쉐어링 등록 (사용)
+curl 'http://192.168.219.100:3001/api/v1/sharing' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwOTAyZWIwM2VkMzAwMTg4NzNhMDIiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwNDA1NDg3MzIwIiwibmlja25hbWUiOiLsp4DsmIHsirkiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDA0MDU0ODd9.5hrhA9xgajwyxEt1hbrFfudKfkWl_jHclq03gCiqZeA' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --data-binary '{"sharingCode":"961447"}' \
+  --compressed | jq
+
+
+집 목록 조회 (쉐어링 목록 확인)
+curl 'http://192.168.219.100:3001/api/v1/user/5f43418dfc79a400189baf48/place/5f4cd00305595f0018ce3bcd' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjQzNDE4ZGZjNzlhNDAwMTg5YmFmNDgiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDQxMTg0MzA0NyIsIm5pY2tuYW1lIjoi64KY7JeQ7JqUIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNjAwNDExODQzfQ.SJN3E86jxuo9Ju9p47eSKzwnhNa1AnG3MGLBtGs1mls' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=utf-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --compressed | jq
+
+
+====================
+
+[sharing code 발급]
+https://ziniot-test.koreacentral.cloudapp.azure.com/service
+http://localhost:3001
+curl 'http://localhost:3001/api/v1/sharing?placeId=5f4cd00305595f0018ce3bcd'  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjQzNDE4ZGZjNzlhNDAwMTg5YmFmNDgiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDkwNDMyOTg1MyIsIm5pY2tuYW1lIjoiemluaW90dGVzdCIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDkwNDMyOX0.k2OjVNcEVXFfXkDUr3x3oUYjmD49iUb3DwD5-v94UVY'
+
+[sharing code 사용]
+curl 'http://localhost:3001/api/v1/sharing' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZiZGM2NDg2YmQwYjAwMThlMTIzNjUiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDkwNDk3NjM3NyIsIm5pY2tuYW1lIjoiWW91bmdzZXVuZyBKaSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDkwNDk3Nn0.tGijW-E-g9C8dFAnaqMcdne4lHuPi8k2IL2WkJTKgcY' --data-binary '{"sharingCode":"1111"}'
+curl 'http://localhost:3001/api/v1/sharing' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZiZGM2NDg2YmQwYjAwMThlMTIzNjUiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDkwNDk3NjM3NyIsIm5pY2tuYW1lIjoiWW91bmdzZXVuZyBKaSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDkwNDk3Nn0.tGijW-E-g9C8dFAnaqMcdne4lHuPi8k2IL2WkJTKgcY' --data-binary '{"sharingCode":"374378"}'
+
+curl 'http://localhost:3001/api/v1/sharing' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjZiZGM2NDg2YmQwYjAwMThlMTIzNjUiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDkwNDk3NjM3NyIsIm5pY2tuYW1lIjoiWW91bmdzZXVuZyBKaSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDkwNDk3Nn0.tGijW-E-g9C8dFAnaqMcdne4lHuPi8k2IL2WkJTKgcY' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --data-binary '{"sharingCode":"374378"}'
+
+
+
+374378
+
+
+회원 탈퇴시 내가 소유한 place/디바이스의 의 accessbler를 다 제거 해야함
+
++
+
+
+{"_id":"5f5b040610e24a484861401d","ownerId":"5f43418dfc79a400189baf48","ownerUserCode":"11722362","placeId":"5f4cd00305595f0018ce3bcd","roomId":"000000000000000000000000","accessibles":["5f43418dfc79a400189baf48"],"isActivate":true,"createdAt":"2020-09-01T05:35:33.526Z","lastUpdatedAt":"2020-09-04T08:03:27.512Z","device":{"firmware":{"mcu":{"version":"0.1.0","url":"","fileName":"","lastUpdated":"","result":""},"modem":{"version":"0.9.6.7","url":"","fileName":"","lastUpdated":"","result":""}},"parentModel":"SMARTVENTIL","category":"CATEGORY_2","type":"LGH_SMARTVENTIL2020A","name":"환기창","description":"환기창","deviceId":"5f59d349300dfe0019d570a5","deviceType":"","connType":"wifi","macAddr":"500291d15e21","serialNo":"LGH-VENTIL_00001","powerType":"electric","manufacturer":"LGH","power":"electric","manufacture":"LGHAUSYS"},"sensor":{"power":{"batteryUsage":"","status":"on","usageTime":""},"alarm":{"changeSensor":"","cleanSensor":"","changeFilter":""},"timer":{"status":"off","minute":0,"remainMinute":0,"startTime":""},"fan":{"fanSpeed":"0"},"filter":{"filterLifeTime":4000,"filterUsageTime":0,"cleanLifeTime":2000,"cleanUsageTime":0,"status":{"changeFilter":"off","cleanFilter":"off"}},"heatExchanger":{"lifeTime":20000,"usageTime":0,"status":{"changeHeatExchanger":"off"}},"airCondition":{"co2":52,"pm2_5":18,"tvocs":0,"temperature":51,"humidity":0},"setting":{},"mode":""},"link":{"autoMode":"off","targetDeviceId":""},"linked":{"sourceDeviceId":""},"activateAt":"2020-09-01T05:37:46.597Z","isConnected":false,"placeObjectId":"5f4cd00305595f0018ce3bcd"}

@@ -1,0 +1,71 @@
+5f9760f9fbfcb2001817ce31
+
+{
+	"appLogin": {
+		"site": "google",
+		"openId": "IDWJMZTaVUdMv2shrD6IDixwgNo1",
+		"profileImage": "https://lh5.googleusercontent.com/-7LQh8R0gb3E/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnvwesKGePlMaD9LAzYXdzGrLw-hQ/s96-c/photo.jpg",
+		"email": "fwiotpjt@gmail.com"
+	},
+	"nickname": "Hausys LG",
+	"appVersion": "1.0.2",
+	"pushToken": [
+		"cfxT8mauhEV-joSAZOeHyK:APA91bFPOakyqzs-wqX85Ilk_mNPzCfWwHZKIqjKz-R-zeeeI5K_kMq06Y5VljLwGuRKzj1bbwG-nkiGiIt3ibb7YKgnHresP8rZYPTYB0TD60XgJ0rFxV5rK-LNOeKQoK8cHpC87p8p",
+		"c--oDeMKlUILnI-Hvvy5xo:APA91bFJMemYGfdG9SQU8T4pSmXtnl2IzpL4uWaZqU5LbffEUpdI02sXaoX_Fb4xMc2F6L0ppPSZ9m75aS8hW9cVs4lxys4ybQBb8wXUawXAt5Ub0Q3HzfyikVwBhB3J9oGQ6sAxhV7Z",
+		"f4FKw3NxyU6aqfxjIvVbnx:APA91bHuDPuzSLGAVdyVrQXjSKZRy04vv4Iaa_ewDl3v4sJPbTiAVenJv9T5MdgjheW_mkr-T-7eZ56C1eJrVL03KDP6Ri9TnMRXpzV8VfzBbIQLMqmuzZIimEl4awJdB-TeUyaJWvma",
+		"dWlGlT1eRxytLcqQTWcMYY:APA91bE2W5dt8olenzSE3LXeGwX-IdeAli4FhfNiO1gfnAmDDTXmPHp0HjI-e_Q3uiykN5eDdNg4ZPnRFpTzuEkTH_pTw8o6YlvlFhhb_hfvGLJPjiyoFknKe00KtY5XsvioudnrG1ob",
+		"fBAk6yunTvmE--Sokd4Alk:APA91bEc4WGEolMHyRQPb43Rdm8QqmOzof6wMnhQUKGWwFDNxQ1dsfaQWC6imCNoaCUUXAoDg1tYZRmN6hD1oH70P9WrLGEy9ZAQ5No-fJii9FlSmYSfq3kCviW3B1Bbgt3nRGdzhtOM",
+		"d_S5kPiKT9qRSDg2K4s6y8:APA91bEOcD0yKgGzR3n1MKsUGAYvDT1uvXoGxXC4koK_t-FconAA-kK2rsWB8D5FniIRGb_otmxd_MTDG7fanz9UiF_nnLcemNoV6pEQeoAcI4iFvLodUuI_YJMiRaMQ-FyJrF4tsMY6",
+		"fnT0sC37Tyq5funNY8_pYQ:APA91bEOaOlQaITIc5QJPb7nqwB42-Co7ZwN_scmWnxKomFGP0-T6apP5M5HMIiMDAZYPcj_fCoXjTnMDEetW0ZdVzyIaP8-jc8fTnsKGTbJpoKBqT9A5u646d_Z--0Bh4uaYjhTIO19",
+		"fUxZ03e6T-yGsl--4cAcMn:APA91bEj4mxV_zC9T0ZAmcZVHkz8H1Uo4qYON6zwsrGVQWwxvzIxnSUD2cki0wQZWhqOQwQlOzN6gz19Niyafr7PNMovz6E--1qsaPQrJYOvqjUuusXcTGsolYKXiMJgxGHe-K2WRZxh",
+		"eBtlyaF2QEymNNYc2ZCUgx:APA91bHjR-LTFh6VL7lRhkATCHcmUFKoR3HiS0Xzh9mOxtIfjpA70YF_t_-Gyb3dvQhy_2-ICgudkgZaf4bqXEtygKaDz34FAaMvZrPPNYGqAbMVmINuaZ49mk0hujRJp9kJuRtOZ4p2",
+		"dP91lAjQQYywodSojFs9h1:APA91bHg947LohlUGR98TAN_hjvZbj6cUnDDSolh-hYFjMB0uie0_mH8j8HJSWXntH94ZaqmfWqS6gNnS3GgygECrpDCFYyny4PWkWHgo6GWbn4Ymg2Bz-noU8N0cCWveH_X1pmSQg8-",
+		"cU4vtMYIT8qmjCjiavSci2:APA91bGjRM79nZ1GCAoH8JTqQ6SlQpBvshpXaz0MRyTXnNTnMsOfFSWbxRfD6nfums0kuqwOqHzVdiT4jkBBAtJH4X-HhXI58I6p4Bp8O0rV8tnQxNchB70a9cPRCoYyAMSda7yiflSG",
+		"feZ_1qvYQKG80_Y95zXnBt:APA91bFYpAoqZEt0ZNpPqjN3nCIOoGakxqo0RuaM3iOPsngkzXMthmp-neNsFdfj5UBO7zVEQ9oaZZD6xNl6D_AgCSfZQBv-NILUB2Xrjw0ST6o6NNjfUADsSVXs9rIb9-KNXu2LBdj7",
+		"dqfxW_VHSpGKP5SSISIF9w:APA91bFxliitFjoGnZzmbWRh1ELsSzsbhrlYEdbPXW80rD0xRqb3xNcdCAbjghSFAwJedf4JEnJ5nX8C__0Uii_JGG8X2I6Uo5SttdN4ZgaU5ww1Ouuozoqsd0EQBLMefGTNe0ityJYP",
+		"ccX37oyERciVJPNNHsK2-3:APA91bFLhXTQRlQhcKFodna-LgLFriQXBFME2YdDRq8mFU0hLov6SruO9InQQHT_Es-fynDIRP2OrRa1ys_FF19b0L60xzZbSik65jZ761sVfACPNTkjpipJY2AB8NEJIXdSOLBtuCvn",
+		"fbxfz3chRbKe1MvSCgKju7:APA91bEJbjPo1b97z5s0D8SAQ4frzr6-J2_OGvzs50v1j9v5_cEyQhQ1WefFieDLO2GH-yMG3US_7rcF4rdLX5ruE87wQ9vWVd8dZTp3NVrRppxWUFqZCDs3oqK7CA-DvY6jz3SRyUnx"
+	],
+	"userCode": "88512835",
+	"activatedAt": "2020-10-26T23:51:21.718Z",
+	"lastAccessedAt": "2020-11-10 15:52:50",
+	"status": "active",
+	"_id": "5f9760f9fbfcb2001817ce31",
+	"cacheDate": "2020-11-10T06:54:11.856Z",
+	"lastUpdatedAt": "2020-11-10 15:52:50",
+	"userId": "5f9760f9fbfcb2001817ce31",
+	"tncInfo": {
+		"agreedAt": "2020-10-27T22:14:34.740Z",
+		"tnc": [
+			{
+				"category": "service",
+				"rev": 11,
+				"version": "1.1"
+			},
+			{
+				"category": "privacy",
+				"rev": 12,
+				"version": "1.1"
+			},
+			{
+				"category": "thirdParty",
+				"rev": 13,
+				"version": "1.1"
+			}
+		]
+	},
+	"push": {
+		"enable": true,
+		"nightMode": false,
+		"homeSharing": false,
+		"deviceEnable": [],
+		"deviceFilter": [
+			"5f9902e81e85ab001878990a"
+		]
+	},
+	"favorites": {
+		"deviceCategory": [
+			"5f9a17291e85ab001878991d"
+		]
+	}
+}

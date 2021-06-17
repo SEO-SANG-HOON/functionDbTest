@@ -1,0 +1,374 @@
+{
+	"_id": ObjectId("5f167c17206a332f38763095"),
+	"deviceType": "lcd_handle",
+	"trigger": true,
+	"action": false,
+	"periodicWeatherInfo": true,
+	"deviceTypeName": "LCD 핸들",
+	"description": "창문의 개폐여부와 날씨 정보를 확인할 수 있는 LCD 디스플레이를 가진 핸들",
+	"power": [
+		"electric"
+	],
+	"firmware": {
+		"mcu": {
+			"version": "1.01",
+			"fileName": "Untitled1.txt",
+			"lastUploaded": ISODate("2019-09-06T02:58:46.127Z")
+		},
+		"modem": {
+			"version": "1.0.3",
+			"fileName": "lgh_ledhandle_wifi_v1.0.3.bin",
+			"lastUploaded": ISODate("2019-09-06T02:58:52.697Z")
+		}
+	},
+	"properties": {
+		"message": {
+			"mode": [
+				"control"
+			],
+			"attr": {
+				"airInside": {
+					"temperature": [
+						-99,
+						99
+					],
+					"humidity": [
+						0,
+						100
+					],
+					"vocs": [
+						0,
+						10000
+					],
+					"co2": [
+						0,
+						1000
+					]
+				},
+				"doorStatus": [
+					"open",
+					"close"
+				],
+				"airGuide": [
+					"HCN11",
+					"HCN12",
+					"HCN13",
+					"HCN14"
+				],
+				"batteryPercent": [
+					0,
+					100
+				]
+			}
+		},
+		"reported": {
+			"mode": [
+				"created",
+				"control",
+				"refresh",
+				"reset",
+				"setting"
+			],
+			"attr": {
+				"type": [
+					"lcd_handle"
+				],
+				"name": "",
+				"count": [
+					0,
+					100
+				],
+				"macAddr": "",
+				"serialNo": "",
+				"power": [
+					"electric",
+					"battery"
+				],
+				"manufacturer": "",
+				"firmware": {
+					"mcu": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					},
+					"modem": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					}
+				},
+				"airInside": {
+					"temperature": [
+						-99,
+						99
+					],
+					"humidity": [
+						0,
+						100
+					],
+					"vocs": [
+						0,
+						10000
+					],
+					"co2": [
+						0,
+						1000
+					]
+				},
+				"doorStatus": [
+					"open",
+					"close"
+				],
+				"childLockStatus": [
+					"on",
+					"off"
+				],
+				"sleepModeStatus": [
+					"on",
+					"off"
+				],
+				"sleepMode": {
+					"fromTime": "hh:mm",
+					"toTime": "hh:mm"
+				},
+				"airGuide": [
+					"HCN11",
+					"HCN12",
+					"HCN13",
+					"HCN14"
+				],
+				"batteryPercent": [
+					0,
+					100
+				],
+				"weather": {
+					"pm2_5": [
+						0,
+						1000
+					],
+					"pm10": [
+						0,
+						1000
+					],
+					"temperature": {
+						"highest": [
+							-99,
+							99
+						],
+						"present": [
+							-99,
+							99
+						],
+						"lowest": [
+							-99,
+							99
+						]
+					},
+					"present": {
+						"sky": [
+							"1",
+							"3",
+							"4"
+						],
+						"pty": [
+							"0",
+							"1",
+							"2",
+							"3",
+							"4"
+						]
+					},
+					"forecast": {
+						"sky": [
+							"1",
+							"3",
+							"4"
+						],
+						"pty": [
+							"0",
+							"1",
+							"2",
+							"3",
+							"4"
+						]
+					}
+				}
+			}
+		},
+		"desired": {
+			"mode": [
+				"control",
+				"setting",
+				"reset"
+			],
+			"attr": {
+				"runMode": [
+					"auto",
+					"silence",
+					"manual",
+					"close"
+				],
+				"sleepModeStatus": [
+					"on",
+					"off"
+				],
+				"sleepMode": {
+					"fromTime": "hh:mm",
+					"toTime": "hh:mm"
+				},
+				"weather": {
+					"pm2_5": [
+						0,
+						1000
+					],
+					"pm10": [
+						0,
+						1000
+					],
+					"temperature": {
+						"highest": [
+							-99,
+							99
+						],
+						"present": [
+							-99,
+							99
+						],
+						"lowest": [
+							-99,
+							99
+						]
+					},
+					"present": {
+						"sky": [
+							"1",
+							"3",
+							"4"
+						],
+						"pty": [
+							"0",
+							"1",
+							"2",
+							"3",
+							"4"
+						]
+					},
+					"forecast": {
+						"sky": [
+							"1",
+							"3",
+							"4"
+						],
+						"pty": [
+							"0",
+							"1",
+							"2",
+							"3",
+							"4"
+						]
+					}
+				},
+				"firmware": {
+					"mcu": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					},
+					"modem": {
+						"version": "",
+						"result": [
+							"success",
+							"fail"
+						]
+					}
+				}
+			}
+		},
+		"trigger": {
+			"attr": {
+				"doorStatus": [
+					{
+						"display": "열림",
+						"value": "open"
+					},
+					{
+						"display": "닫힘",
+						"value": "close"
+					}
+				],
+				"airInside": {
+					"temperature": [
+						{
+							"display": "30도 이상",
+							"value": 30
+						},
+						{
+							"display": "20도 이상",
+							"value": 20
+						},
+						{
+							"display": "10도 이상",
+							"value": 10
+						},
+						{
+							"display": "0도 이하",
+							"value": 0
+						},
+						{
+							"display": "-10도 이하",
+							"value": -10
+						}
+					],
+					"humidity": [
+						{
+							"display": "70% 이상",
+							"value": 70
+						},
+						{
+							"display": "55% 이상",
+							"value": 55
+						},
+						{
+							"display": "40% 이상",
+							"value": 40
+						},
+						{
+							"display": "39% 이하",
+							"value": 39
+						}
+					],
+					"vocs": [
+						{
+							"display": "좋음",
+							"value": "1"
+						},
+						{
+							"display": "보통",
+							"value": "2"
+						},
+						{
+							"display": "나쁨",
+							"value": "3"
+						},
+						{
+							"display": "매우나쁨",
+							"value": "4"
+						}
+					]
+				}
+			}
+		}
+	},
+	"uiActivated": true,
+	"management": {
+		"isDisplay": false,
+		"registratedAt": null,
+		"lastUpdatedAt": null
+	}
+}

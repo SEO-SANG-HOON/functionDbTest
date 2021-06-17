@@ -1,0 +1,16 @@
+20201008 다른 사용자가 삭제됨
+curl 'https://ziniot-test.koreacentral.cloudapp.azure.com/service/api/v1/user/5f4ddb8a403b65001839cac3' \
+curl 'http://localhost:3001/api/v1/user/5f4ddb8a403b65001839cac3' \
+  -X 'DELETE' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjRkZGI4YTQwM2I2NTAwMTgzOWNhYzMiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMjE0MTQxNTAxNiIsIm5pY2tuYW1lIjoiSllTIDEyOSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMjE0MTQxNX0.3rHBOidakypFwhmClfkNeBSRyDmro_MyJUEsOu3GdyE' \
+  -H 'User-Agent: Mozilla/5.0 Google' \
+  -H 'Content-Type: application/json;charset=UTF-8' \
+  -H 'X-Requested-With: com.lghausys.mobile.zinhome' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --data-binary '{}' \
+  --compressed

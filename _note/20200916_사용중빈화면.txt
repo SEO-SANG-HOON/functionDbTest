@@ -1,0 +1,545 @@
+
+2020-09-16 03:35:27 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803?group=deviceCategory&filter=CATEGORY_1
+2020-09-16 03:35:27 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f5161cd6773fa0018395803
+2020-09-16 03:35:27 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:27 debug: {"category":"CATEGORY_1","name":"스마트후드","devices":[{"_id":"5f605c3a595bdf001803dc2c","ownerId":"5f50b924b45e290019918510","ownerUserCode":"46694982","placeId":"5f5161cd6773fa0018395803","roomId":"5f51f896ddad31001871dd89","accessibles":["5f50b924b45e290019918510"],"isActivate":true,"createdAt":"2020-09-15T06:16:26.529Z","lastUpdatedAt":"2020-09-16T01:22:06.082Z","device":{"firmware":{"mcu":{"version":"0.1.0","url":"","fileName":"","lastUpdated":"","result":""},"modem":{"version":"0.9.6.6","url":"","fileName":"","lastUpdated":"","result":""}},"parentModel":"SMARTHOOD","category":"CATEGORY_1","type":"LGH_SMARTHOOD2020A","name":"스마트후드","description":"스마트후드 01 모델","deviceId":"5f605c3a595bdf001803dc2c","deviceType":"","connType":"wifi","macAddr":"500291d15de9","serialNo":"LGH-HOOD_00001","powerType":"","manufacturer":"LGH","power":"electric","manufacture":"LGHAUSYS"},"sensor":{"power":{"batteryUsage":"","status":"on","usageTime":0},"alarm":{"controllAlarm":""},"fan":{"fanSpeed":"0"},"timer":{"status":"off","minute":0,"remainMinute":0,"startTime":""},"lamp":{"status":"off"},"filter":{"lifeTime":120,"usageTime":104},"setting":{"filterPush":true},"fanSpeed":"0"},"link":{"targetDeviceId":"","event":[],"autoMode":"on"},"linked":{"sourceDeviceId":""},"trigger":[{"push":{"enumList":{"off":"스마트후드가 꺼졌습니다.","on":"스마트후드가 켜졌습니다."},"type":"enum"},"attr":"sensor.power.status","isPush":true,"pushType":"device","category":"전원"},{"push":{"type":"value","message":"스마트후드의 사용시간이 변경 되었습니다. (현재 : {value})"},"attr":"sensor.power.usageTime","isPush":false,"pushType":"device","category":"센서"},{"push":{"type":"value","message":"스마트후드의 Fan Speed가 변경 되었습니다. (현재 : {value})"},"attr":"sensor.fan.fanSpeed","isPush":true,"pushType":"device","category":"제어"},{"push":{"enumList":{"off":"스마트후드의 LED가 꺼졌습니다.","on":"스마트후드가 LED가 켜졌습니다."},"type":"enum"},"attr":"sensor.lamp.status","isPush":true,"pushType":"device","category":"제어"},{"attr":"sensor.filter.lifeTime","category":"센서","isPush":false,"pushType":"filter"},{"push":{"type":"event","message":"스마트후드의 필터 교체가 필요합니다."},"attr":"sensor.filter.usageTime","compare":"sensor.filter.lifeTime","isPush":false,"pushType":"filter","category":"센서"}],"activateAt":"2020-09-15T06:17:10.071Z","isConnected":true}]}
+2020-09-16 03:35:27 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803?group=deviceCategory&filter=CATEGORY_1 200 40ms 2.9kb
+2020-09-16 03:35:27 info: Weather from DB - {"gsKey":"057-127","gsUTC":"2020-09-16T03:35:26.912Z","gsHigh":"26.0","gsLow":"20.0","gsCurr":"25.1","gsSky":2,"gsPM10":"20","gsPM25":"17"}
+--
+2020-09-16 06:58:59 info:   <-- GET /api/v1/user/5f519269b45e290019918513/place/5f5192885fa02a001a0d740a?group=room&filter=5f55735bd66fe100189e22a6
+2020-09-16 06:58:59 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f519269b45e290019918513, 장소 - 5f5192885fa02a001a0d740a
+2020-09-16 06:58:59 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUxOTI2OWI0NWUyOTAwMTk5MTg1MTMiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTU5OTg0NzUyNjUzNiIsIm5pY2tuYW1lIjoi6rmA7KeE7JqwIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNTk5ODQ3NTI2fQ.v8RjTEN1Fe8lY8eRjqsYtDXCIkkrtTpWjDvcthQIKIo
+2020-09-16 06:58:59 debug: {"_id":"5f55735bd66fe100189e22a6","name":"의왕","devices":[{"_id":"5f5f0e6da41b7b001afca373","ownerId":"5f519269b45e290019918513","ownerUserCode":"32998858","placeId":"5f5192885fa02a001a0d740a","roomId":"5f55735bd66fe100189e22a6","accessibles":["5f519269b45e290019918513"],"isActivate":true,"createdAt":"2020-09-14T06:32:13.156Z","lastUpdatedAt":"2020-09-14T09:14:24.373Z","device":{"firmware":{"mcu":{"version":"0.1.0","url":"","fileName":"","lastUpdated":"","result":""},"modem":{"version":"0.9.6.6","url":"","fileName":"","lastUpdated":"","result":""}},"parentModel":"SMARTHOOD","category":"CATEGORY_1","type":"LGH_SMARTHOOD2020A","name":"스마트후드","description":"스마트후드 01 모델","deviceId":"5f5f0e6da41b7b001afca373","deviceType":"","connType":"wifi","macAddr":"500291d15e02","serialNo":"LGH-HOOD_00001","powerType":"","manufacturer":"LGH","power":"electric","manufacture":"LGHAUSYS"},"sensor":{"power":{"batteryUsage":"","status":"off","usageTime":2},"alarm":{"controllAlarm":""},"fan":{"fanSpeed":"0","linkSpeed":"1"},"timer":{"status":"off","minute":0,"remainMinute":0,"startTime":""},"lamp":{"status":"off"},"filter":{"lifeTime":120,"usageTime":10},"setting":{"filterPush":true},"fanSpeed":"0"},"link":{"targetDeviceId":"5f5f0eb6595bdf001803dc21","event":{"delayTimer":13,"delayTimerOnOff":false,"fanCountBySpeed":[1,3,5]},"autoMode":"on"},"linked":{"sourceDeviceId":""},"trigger":[{"push":{"enumList":{"off":"스마트후드가 꺼졌습니다.","on":"스마트후드가 켜졌습니다."},"type":"enum"},"attr":"sensor.power.status","isPush":true,"pushType":"device","category":"전원"},{"push":{"type":"value","message":"스마트후드의 사용시간이 변경 되었습니다. (현재 : {value})"},"attr":"sensor.power.usageTime","isPush":false,"pushType":"device","category":"센서"},{"push":{"type":"value","message":"스마트후드의 Fan Speed가 변경 되었습니다. (현재 : {value})"},"attr":"sensor.fan.fanSpeed","isPush":true,"pushType":"device","category":"제어"},{"push":{"enumList":{"off":"스마트후드의 LED가 꺼졌습니다.","on":"스마트후드가 LED가 켜졌습니다."},"type":"enum"},"attr":"sensor.lamp.status","isPush":true,"pushType":"device","category":"제어"},{"attr":"sensor.filter.lifeTime","category":"센서","isPush":false,"pushType":"filter"},{"push":{"type":"event","message":"스마트후드의 필터 교체가 필요합니다."},"attr":"sensor.filter.usageTime","compare":"sensor.filter.lifeTime","isPush":false,"pushType":"filter","category":"센서"}],"activateAt":"2020-09-14T06:32:51.183Z","isConnected":true},{"_id":"5f5f0eb6595bdf001803dc21","ownerId":"5f519269b45e290019918513","ownerUserCode":"32998858","placeId":"5f5192885fa02a001a0d740a","roomId":"5f55735bd66fe100189e22a6","accessibles":["5f519269b45e290019918513"],"isActivate":true,"createdAt":"2020-09-14T06:33:26.335Z","device":{"parentModel":"LGE_COOKTOP","category":"CATEGORY_3","type":"WBEF3MT","name":"레인지","description":"레인지 (WBEF3MT)","deviceId":"5f5f0eb6595bdf001803dc21","connType":"","macAddr":"419c4a8dca8887f982d863e0dafb4932665408f607b5decc32c186dec49dc1be","serialNo":"419c4a8dca8887f982d863e0dafb4932665408f607b5decc32c186dec49dc1be","powerType":"","manufacturer":"lge_thinq","firmware":{"mcu":{"version":"","url":"","fileName":"","lastUpdated":"","result":""},"modem":{"version":"","url":"","fileName":"","lastUpdated":"","result":""}}},"sensor":{"setting":{"controllAlarm":"on"},"leftFront":{"cookingZone":{"currentState":"INITIAL"},"power":{"powerLevel":0},"timer":{"remainHour":0,"remainMinute":0},"remoteControlEnable":{"remoteControlEnabled":false}},"rightFront":{"cookingZone":{"currentState":"INITIAL"},"power":{"powerLevel":0},"timer":{"remainHour":0,"remainMinute":0},"remoteControlEnable":{"remoteControlEnabled":false}},"leftRear":{"cookingZone":{"currentState":"INITIAL"},"power":{"powerLevel":0},"timer":{"remainHour":0,"remainMinute":0},"remoteControlEnable":{"remoteControlEnabled":false}}},"link":{"autoMode":"off","targetDeviceId":"","event":{}},"linked":{"sourceDeviceId":"5f5f0e6da41b7b001afca373","event":{"delayTimer":13,"delayTimerOnOff":false,"fanCountBySpeed":[1,3,5]},"autoMode":"on"},"activateAt":"2020-09-14T06:33:26.373Z","lastUpdatedAt":"2020-09-14T09:14:22.302Z","isConnected":true}]}
+2020-09-16 06:58:59 info:   --> GET /api/v1/user/5f519269b45e290019918513/place/5f5192885fa02a001a0d740a?group=room&filter=5f55735bd66fe100189e22a6 200 40ms 4.63kb
+2020-09-16 06:59:04 info:   <-- GET /
+--
+2020-09-16 12:17:28 info:   --> GET /api/v1/settings/deviceApInfo 200 9ms 308b
+2020-09-16 12:17:44 info:   <-- GET /thinq/isConnected
+2020-09-16 12:17:44 info: checkServerSession : SERVER KEY eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYwMWIwODU5NWJkZjAwMTgwM2RjMjkiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMTMzODk2NTQ5Iiwibmlja25hbWUiOiLquYDshLHrr7wiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDAxMzM4OTZ9.GoelkG91S2BbKp3ab1eM954m9WdTS_g43Gg6rIM_gx4
+2020-09-16 12:17:44 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYwMWIwODU5NWJkZjAwMTgwM2RjMjkiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMTMzODk2NTQ5Iiwibmlja25hbWUiOiLquYDshLHrr7wiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDAxMzM4OTZ9.GoelkG91S2BbKp3ab1eM954m9WdTS_g43Gg6rIM_gx4
+2020-09-16 12:17:44 error: StatusCodeError: 400 - "no token"    at new StatusCodeError (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/errors.js:32:15)
+--
+2020-09-16 13:31:20 info:   --> GET / 200 1ms 15b
+2020-09-16 13:31:21 info:   <-- GET /thinq/isConnected
+2020-09-16 13:31:21 info: checkServerSession : SERVER KEY eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYwMWIwODU5NWJkZjAwMTgwM2RjMjkiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMTMzODk2NTQ5Iiwibmlja25hbWUiOiLquYDshLHrr7wiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDAxMzM4OTZ9.GoelkG91S2BbKp3ab1eM954m9WdTS_g43Gg6rIM_gx4
+2020-09-16 13:31:21 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYwMWIwODU5NWJkZjAwMTgwM2RjMjkiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMTMzODk2NTQ5Iiwibmlja25hbWUiOiLquYDshLHrr7wiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDAxMzM4OTZ9.GoelkG91S2BbKp3ab1eM954m9WdTS_g43Gg6rIM_gx4
+2020-09-16 13:31:21 error: StatusCodeError: 400 - "no token"    at new StatusCodeError (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/errors.js:32:15)
+--
+2020-09-16 00:06:23 info:   --> GET / 200 0ms 15b
+2020-09-16 00:06:24 info:   <-- GET /thinq/isConnected
+2020-09-16 00:06:24 info: checkServerSession : SERVER KEY eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYxNTZiOWE0MWI3YjAwMWFmY2EzODMiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMjE0NzEzMzc0Iiwibmlja25hbWUiOiLrgpjsoJXsmrEiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDAyMTQ3MTN9.IJ-qBaJZ9op8GyZC7Yz6JiEujnQPgstZLOT6pQVVNLk
+2020-09-16 00:06:24 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYxNTZiOWE0MWI3YjAwMWFmY2EzODMiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMjE0NzEzMzc0Iiwibmlja25hbWUiOiLrgpjsoJXsmrEiLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE2MDAyMTQ3MTN9.IJ-qBaJZ9op8GyZC7Yz6JiEujnQPgstZLOT6pQVVNLk
+2020-09-16 00:06:25 error: StatusCodeError: 400 - "no token"	    at new StatusCodeError (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/errors.js:32:15)
+--
+2020-09-16 03:36:28 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384 200 23ms 542b
+2020-09-16 03:36:28 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:28 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384 200 40ms 542b
+2020-09-16 03:36:29 info:   <-- GET /
+--
+2020-09-16 09:19:24 info:   --> GET / 200 1ms 15b
+2020-09-16 09:19:25 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61886ca41b7b001afca385
+2020-09-16 09:19:25 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f61886ca41b7b001afca385
+2020-09-16 09:19:25 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 09:19:25 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61886ca41b7b001afca385 200 40ms 555b
+2020-09-16 09:19:28 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61886ca41b7b001afca385
+--
+2020-09-16 03:35:29 info:   --> GET / 200 2ms 15b
+2020-09-16 03:35:32 info:   <-- GET /
+2020-09-16 03:35:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:35:57 info:   <-- GET /api/v1/settings
+2020-09-16 03:35:57 info:   --> GET /api/v1/settings 403 1ms 96b
+2020-09-16 03:35:58 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+--
+2020-09-16 12:32:04 info:   --> GET /api/v1/user/5f620596a41b7b001afca389/place/5f6205baa41b7b001afca38a 200 21ms 482b
+2020-09-16 12:32:08 info:   <-- GET /thinq/isConnected
+2020-09-16 12:32:08 info: checkServerSession : SERVER KEY eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYyMDU5NmE0MWI3YjAwMWFmY2EzODkiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMjU5NDc4MTQ0Iiwibmlja25hbWUiOiJPc2VvbiIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDI1OTQ3OH0.pROjBgIi7H123U_fY_5dwFVdPB572c2kz9k6BP-_ciI
+2020-09-16 12:32:08 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYyMDU5NmE0MWI3YjAwMWFmY2EzODkiLCJvYXV0aFNpdGUiOiJrYWthbyIsImxvZ2luQXQiOiIxNjAwMjU5NDc4MTQ0Iiwibmlja25hbWUiOiJPc2VvbiIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDI1OTQ3OH0.pROjBgIi7H123U_fY_5dwFVdPB572c2kz9k6BP-_ciI
+2020-09-16 12:32:08 error: StatusCodeError: 400 - "no token"		    at new StatusCodeError (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/errors.js:32:15)
+--
+2020-09-16 13:57:20 info:   --> GET /api/v1/user/5f621992d086fa0019e7f594/place/5f6219aed086fa0019e7f595 200 21ms 467b
+2020-09-16 13:57:23 info:   <-- GET /thinq/isConnected
+2020-09-16 13:57:23 info: checkServerSession : SERVER KEY eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYyMTk5MmQwODZmYTAwMTllN2Y1OTQiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDI2NDU5NDMyNSIsIm5pY2tuYW1lIjoiU29vbmJvIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDI2NDU5NH0.NKyz8iDWuYwaZNnCdzjt4OoTgRHQSMZFIV3j2Ne2UiQ
+2020-09-16 13:57:23 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjYyMTk5MmQwODZmYTAwMTllN2Y1OTQiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDI2NDU5NDMyNSIsIm5pY2tuYW1lIjoiU29vbmJvIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDI2NDU5NH0.NKyz8iDWuYwaZNnCdzjt4OoTgRHQSMZFIV3j2Ne2UiQ
+2020-09-16 13:57:24 error: StatusCodeError: 400 - "no token"		    at new StatusCodeError (/usr/src/app/node_modules/request-promise-native/node_modules/request-promise-core/lib/errors.js:32:15)
+
+
+
+
+/usr/src/app # cat ./logs/2020-09-16-results.log | grep "<-- POST /api/v1/auth/login" -A 1
+
+2020-09-16 01:10:44 info:   <-- POST /api/v1/auth/login
+2020-09-16 01:10:44 info: login start user - opendId - 1477197028 / kakao
+
+2020-09-16 00:05:13 info:   <-- POST /api/v1/auth/login
+2020-09-16 00:05:13 info: login start user - opendId - 1478911172 / kakao
+
+2020-09-16 03:36:27 info:   <-- POST /api/v1/auth/login
+2020-09-16 03:36:27 info: login start user - opendId - 2tXrQORcThPgx4ExLbqFFqPZNYn2 / google
+
+2020-09-16 05:00:38 info:   <-- POST /api/v1/auth/login
+2020-09-16 05:00:38 info: login start user - opendId - 1479145601 / kakao
+
+2020-09-16 12:31:18 info:   <-- POST /api/v1/auth/login
+2020-09-16 12:31:18 info: login start user - opendId - 1479532726 / kakao
+
+2020-09-16 04:05:33 info:   <-- POST /api/v1/auth/login
+2020-09-16 04:05:33 info: login start user - opendId - 1479098934 / kakao
+
+2020-09-16 04:10:25 info:   <-- POST /api/v1/auth/login
+2020-09-16 04:10:25 info: login start user - opendId - 1479103279 / kakao
+
+2020-09-16 12:14:38 info:   <-- POST /api/v1/auth/login
+2020-09-16 12:14:38 info: login start user - opendId - 2tXrQORcThPgx4ExLbqFFqPZNYn2 / google
+
+2020-09-16 13:56:34 info:   <-- POST /api/v1/auth/login
+2020-09-16 13:56:34 info: login start user - opendId - UkwZoerMz7NyLO6G6GhgB7e3XV63 / google
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pod/zinfw-prod-api-6cdfd87d9c-8hwhp
+/usr/src/app #
+/usr/src/app # cat ./logs/2020-09-16-results.log | grep "2020-09-16 03:3"
+2020-09-16 03:30:02 info:   <-- GET /
+2020-09-16 03:30:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:30:29 info:   <-- GET /
+2020-09-16 03:30:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:30:32 info:   <-- GET /
+2020-09-16 03:30:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:30:59 info:   <-- GET /
+2020-09-16 03:30:59 info:   --> GET / 200 2ms 15b
+2020-09-16 03:31:02 info:   <-- GET /
+2020-09-16 03:31:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:31:29 info:   <-- GET /
+2020-09-16 03:31:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:31:32 info:   <-- GET /
+2020-09-16 03:31:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:31:59 info:   <-- GET /
+2020-09-16 03:31:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:02 info:   <-- GET /
+2020-09-16 03:32:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:32:29 info:   <-- GET /
+2020-09-16 03:32:29 info:   --> GET / 200 0ms 15b
+2020-09-16 03:32:32 info:   <-- GET /
+2020-09-16 03:32:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:59 info:   <-- GET /
+2020-09-16 03:32:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:02 info:   <-- GET /
+2020-09-16 03:33:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:29 info:   <-- GET /
+2020-09-16 03:33:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:32 info:   <-- GET /
+2020-09-16 03:33:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:59 info:   <-- GET /
+2020-09-16 03:33:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:02 info:   <-- GET /
+2020-09-16 03:34:02 info:   --> GET / 200 2ms 15b
+2020-09-16 03:34:29 info:   <-- GET /
+2020-09-16 03:34:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:32 info:   <-- GET /
+2020-09-16 03:34:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:59 info:   <-- GET /
+2020-09-16 03:34:59 info:   --> GET / 200 0ms 15b
+2020-09-16 03:35:02 info:   <-- GET /
+2020-09-16 03:35:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:35:26 info:   <-- GET /api/v1/settings
+2020-09-16 03:35:26 info:   --> GET /api/v1/settings 200 43ms 1.02kb
+2020-09-16 03:35:26 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:35:26 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:35:26 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:26 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 12ms 2.86kb
+2020-09-16 03:35:26 info:   <-- GET /api/v1/weather?placeId=5f5161cd6773fa0018395803
+2020-09-16 03:35:26 info: getWeather place - 5f5161cd6773fa0018395803
+2020-09-16 03:35:26 debug: http_weather Started!!!
+2020-09-16 03:35:27 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803?group=deviceCategory&filter=CATEGORY_1
+2020-09-16 03:35:27 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f5161cd6773fa0018395803
+2020-09-16 03:35:27 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:27 debug: {"category":"CATEGORY_1","name":"스마트후드","devices":[{"_id":"5f605c3a595bdf001803dc2c","ownerId":"5f50b924b45e290019918510","ownerUserCode":"46694982","placeId":"5f5161cd6773fa0018395803","roomId":"5f51f896ddad31001871dd89","accessibles":["5f50b924b45e290019918510"],"isActivate":true,"createdAt":"2020-09-15T06:16:26.529Z","lastUpdatedAt":"2020-09-16T01:22:06.082Z","device":{"firmware":{"mcu":{"version":"0.1.0","url":"","fileName":"","lastUpdated":"","result":""},"modem":{"version":"0.9.6.6","url":"","fileName":"","lastUpdated":"","result":""}},"parentModel":"SMARTHOOD","category":"CATEGORY_1","type":"LGH_SMARTHOOD2020A","name":"스마트후드","description":"스마트후드 01 모델","deviceId":"5f605c3a595bdf001803dc2c","deviceType":"","connType":"wifi","macAddr":"500291d15de9","serialNo":"LGH-HOOD_00001","powerType":"","manufacturer":"LGH","power":"electric","manufacture":"LGHAUSYS"},"sensor":{"power":{"batteryUsage":"","status":"on","usageTime":0},"alarm":{"controllAlarm":""},"fan":{"fanSpeed":"0"},"timer":{"status":"off","minute":0,"remainMinute":0,"startTime":""},"lamp":{"status":"off"},"filter":{"lifeTime":120,"usageTime":104},"setting":{"filterPush":true},"fanSpeed":"0"},"link":{"targetDeviceId":"","event":[],"autoMode":"on"},"linked":{"sourceDeviceId":""},"trigger":[{"push":{"enumList":{"off":"스마트후드가 꺼졌습니다.","on":"스마트후드가 켜졌습니다."},"type":"enum"},"attr":"sensor.power.status","isPush":true,"pushType":"device","category":"전원"},{"push":{"type":"value","message":"스마트후드의 사용시간이 변경 되었습니다. (현재 : {value})"},"attr":"sensor.power.usageTime","isPush":false,"pushType":"device","category":"센서"},{"push":{"type":"value","message":"스마트후드의 Fan Speed가 변경 되었습니다. (현재 : {value})"},"attr":"sensor.fan.fanSpeed","isPush":true,"pushType":"device","category":"제어"},{"push":{"enumList":{"off":"스마트후드 의 LED가 꺼졌습니다.","on":"스마트후드가 LED가 켜졌습니다."},"type":"enum"},"attr":"sensor.lamp.status","isPush":true,"pushType":"device","category":"제어"},{"attr":"sensor.filter.lifeTime","category":"센서","isPush":false,"pushType":"filter"},{"push":{"type":"event","message":"스마트후드의 필터 교체가 필요합니다."},"attr":"sensor.filter.usageTime","compare":"sensor.filter.lifeTime","isPush":false,"pushType":"filter","category":"센서"}],"activateAt":"2020-09-15T06:17:10.071Z","isConnected":true}]}
+2020-09-16 03:35:27 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803?group=deviceCategory&filter=CATEGORY_1 200 40ms 2.9kb
+2020-09-16 03:35:27 info: Weather from DB - {"gsKey":"057-127","gsUTC":"2020-09-16T03:35:26.912Z","gsHigh":"26.0","gsLow":"20.0","gsCurr":"25.1","gsSky":2,"gsPM10":"20","gsPM25":"17"}
+2020-09-16 03:35:27 info:   --> GET /api/v1/weather?placeId=5f5161cd6773fa0018395803 200 238ms 178b
+2020-09-16 03:35:29 info:   <-- GET /
+2020-09-16 03:35:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:35:32 info:   <-- GET /
+2020-09-16 03:35:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:35:58 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:35:58 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:35:58 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:58 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 13ms 3.33kb
+2020-09-16 03:35:58 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384
+2020-09-16 03:35:58 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f61881da41b7b001afca384
+2020-09-16 03:35:58 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:58 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384 200 23ms 542b
+2020-09-16 03:35:59 info:   <-- GET /
+2020-09-16 03:35:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:02 info:   <-- GET /
+2020-09-16 03:36:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:20 info:   <-- GET /api/v1/settings
+2020-09-16 03:36:20 info:   --> GET /api/v1/settings 200 26ms 1.02kb
+2020-09-16 03:36:28 info:   <-- GET /api/v1/settings
+2020-09-16 03:36:28 info:   --> GET /api/v1/settings 200 24ms 1.02kb
+2020-09-16 03:36:28 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:36:28 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:36:28 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:28 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 14ms 3.33kb
+2020-09-16 03:36:28 info:   <-- GET /api/v1/weather?placeId=5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: getWeather place - 5f61881da41b7b001afca384
+2020-09-16 03:36:28 debug: http_weather Started!!!
+2020-09-16 03:36:28 info: Weather from DB - {"gsKey":"049-037","gsUTC":"2020-09-16T03:35:58.182Z","gsHigh":"26.0","gsLow":"21.0","gsCurr":"22.8","gsSky":2,"gsPM10":"-","gsPM25":"-","cacheDate":"2020-09-16T03:35:58.442Z"}
+2020-09-16 03:36:28 info:   --> GET /api/v1/weather?placeId=5f61881da41b7b001afca384 200 5ms 176b
+2020-09-16 03:36:29 info:   <-- GET /
+2020-09-16 03:36:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:32 info:   <-- GET /
+2020-09-16 03:36:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:34 info:   <-- GET /api/v1/weather?placeId=5f56fb8ad086fa0019e7f4dd
+2020-09-16 03:36:34 info: getWeather place - 5f56fb8ad086fa0019e7f4dd
+2020-09-16 03:36:34 debug: http_weather Started!!!
+2020-09-16 03:36:35 info: Weather from DB - {"gsKey":"048-036","gsUTC":"2020-09-16T03:36:34.652Z","gsHigh":"26.0","gsLow":"21.0","gsCurr":"25.9","gsSky":2,"gsPM10":"8","gsPM25":"-"}
+2020-09-16 03:36:35 info:   --> GET /api/v1/weather?placeId=5f56fb8ad086fa0019e7f4dd 200 1,260ms 176b
+2020-09-16 03:36:59 info:   <-- GET /
+2020-09-16 03:36:59 info:   --> GET / 200 0ms 15b
+2020-09-16 03:37:02 info:   <-- GET /
+2020-09-16 03:37:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:37:16 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:37:16 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:37:16 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:37:17 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 15ms 3.81kb
+2020-09-16 03:37:17 info:   <-- GET /api/v1/weather?placeId=5f61886ca41b7b001afca385
+2020-09-16 03:37:17 info: getWeather place - 5f61886ca41b7b001afca385
+2020-09-16 03:37:17 debug: http_weather Started!!!
+2020-09-16 03:37:19 info: Weather from DB - {"gsKey":"060-038","gsUTC":"2020-09-16T03:37:17.089Z","gsHigh":"26.0","gsLow":"21.0","gsCurr":"22.2","gsSky":2,"gsPM10":"-","gsPM25":"-"}
+2020-09-16 03:37:19 info:   --> GET /api/v1/weather?placeId=5f61886ca41b7b001afca385 200 2,228ms 176b
+2020-09-16 03:37:19 info:   <-- GET /api/v1/weather?placeId=5f61886ca41b7b001afca385
+2020-09-16 03:37:19 info: getWeather place - 5f61886ca41b7b001afca385
+2020-09-16 03:37:19 debug: http_weather Started!!!
+2020-09-16 03:37:19 info: Weather from DB - {"gsKey":"060-038","gsUTC":"2020-09-16T03:37:17.089Z","gsHigh":"26.0","gsLow":"21.0","gsCurr":"22.2","gsSky":2,"gsPM10":"-","gsPM25":"-","cacheDate":"2020-09-16T03:37:19.304Z"}
+2020-09-16 03:37:19 info:   --> GET /api/v1/weather?placeId=5f61886ca41b7b001afca385 200 5ms 176b
+2020-09-16 03:37:29 info:   <-- GET /
+2020-09-16 03:37:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:37:32 info:   <-- GET /
+2020-09-16 03:37:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:37:59 info:   <-- GET /
+2020-09-16 03:37:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:02 info:   <-- GET /
+2020-09-16 03:38:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:29 info:   <-- GET /
+2020-09-16 03:38:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:32 info:   <-- GET /
+2020-09-16 03:38:32 info:   --> GET / 200 2ms 15b
+2020-09-16 03:38:59 info:   <-- GET /
+2020-09-16 03:38:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:02 info:   <-- GET /
+2020-09-16 03:39:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:29 info:   <-- GET /
+2020-09-16 03:39:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:32 info:   <-- GET /
+2020-09-16 03:39:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:39:59 info:   <-- GET /
+2020-09-16 03:39:59 info:   --> GET / 200 1ms 15b
+/usr/src/app # ^C
+/usr/src/app # cat ./logs/2020-09-16-results.log | grep "auth" -A 1^C
+/usr/src/app # command terminated with exit code 130
+ ✘ jys129  /mnt/c/Users/LGCNS  pod 6
+pod/zinfw-prod-api-6cdfd87d9c-rrzpd
+/usr/src/app # cat ./logs/2020-09-16-results.log | grep "<-- POST /api/v1/auth/login" -A 1^C
+/usr/src/app # ^C
+/usr/src/app #  cat ./logs/2020-09-16-results.log | grep "2020-09-16 03:3"
+2020-09-16 03:30:02 info:   <-- GET /
+2020-09-16 03:30:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:30:29 info:   <-- GET /
+2020-09-16 03:30:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:30:32 info:   <-- GET /
+2020-09-16 03:30:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:30:59 info:   <-- GET /
+2020-09-16 03:30:59 info:   --> GET / 200 0ms 15b
+2020-09-16 03:31:02 info:   <-- GET /
+2020-09-16 03:31:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:31:29 info:   <-- GET /
+2020-09-16 03:31:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:31:32 info:   <-- GET /
+2020-09-16 03:31:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:31:59 info:   <-- GET /
+2020-09-16 03:31:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:02 info:   <-- GET /
+2020-09-16 03:32:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:32:29 info:   <-- GET /
+2020-09-16 03:32:29 info:   --> GET / 200 0ms 15b
+2020-09-16 03:32:32 info:   <-- GET /
+2020-09-16 03:32:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:59 info:   <-- GET /
+2020-09-16 03:32:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:02 info:   <-- GET /
+2020-09-16 03:33:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:33:29 info:   <-- GET /
+2020-09-16 03:33:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:32 info:   <-- GET /
+2020-09-16 03:33:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:33:59 info:   <-- GET /
+2020-09-16 03:33:59 info:   --> GET / 200 0ms 15b
+2020-09-16 03:34:02 info:   <-- GET /
+2020-09-16 03:34:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:29 info:   <-- GET /
+2020-09-16 03:34:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:32 info:   <-- GET /
+2020-09-16 03:34:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:59 info:   <-- GET /
+2020-09-16 03:34:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:35:02 info:   <-- GET /
+2020-09-16 03:35:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:35:26 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/tnc
+2020-09-16 03:35:26 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:26 info:   --> GET /api/v1/user/5f50b924b45e290019918510/tnc 200 46ms 377b
+2020-09-16 03:35:26 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-09-16 03:35:26 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:26 info:   --> GET /api/v1/board/lastestSequence/notice 200 10ms 21b
+2020-09-16 03:35:26 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803
+2020-09-16 03:35:26 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f5161cd6773fa0018395803
+2020-09-16 03:35:26 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:26 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803 200 21ms 615b
+2020-09-16 03:35:27 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803?group=deviceCategory&filter=CATEGORY_1
+2020-09-16 03:35:27 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f5161cd6773fa0018395803
+2020-09-16 03:35:27 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:27 debug: {"category":"CATEGORY_1","name":"스마트후드","devices":[{"_id":"5f605c3a595bdf001803dc2c","ownerId":"5f50b924b45e290019918510","ownerUserCode":"46694982","placeId":"5f5161cd6773fa0018395803","roomId":"5f51f896ddad31001871dd89","accessibles":["5f50b924b45e290019918510"],"isActivate":true,"createdAt":"2020-09-15T06:16:26.529Z","lastUpdatedAt":"2020-09-16T01:22:06.082Z","device":{"firmware":{"mcu":{"version":"0.1.0","url":"","fileName":"","lastUpdated":"","result":""},"modem":{"version":"0.9.6.6","url":"","fileName":"","lastUpdated":"","result":""}},"parentModel":"SMARTHOOD","category":"CATEGORY_1","type":"LGH_SMARTHOOD2020A","name":"스마트후드","description":"스마트후드 01 모델","deviceId":"5f605c3a595bdf001803dc2c","deviceType":"","connType":"wifi","macAddr":"500291d15de9","serialNo":"LGH-HOOD_00001","powerType":"","manufacturer":"LGH","power":"electric","manufacture":"LGHAUSYS"},"sensor":{"power":{"batteryUsage":"","status":"on","usageTime":0},"alarm":{"controllAlarm":""},"fan":{"fanSpeed":"0"},"timer":{"status":"off","minute":0,"remainMinute":0,"startTime":""},"lamp":{"status":"off"},"filter":{"lifeTime":120,"usageTime":104},"setting":{"filterPush":true},"fanSpeed":"0"},"link":{"targetDeviceId":"","event":[],"autoMode":"on"},"linked":{"sourceDeviceId":""},"trigger":[{"push":{"enumList":{"off":"스마트후드가 꺼졌습니다.","on":"스마트후드가 켜졌습니다."},"type":"enum"},"attr":"sensor.power.status","isPush":true,"pushType":"device","category":"전원"},{"push":{"type":"value","message":"스마트후드의 사용시간이 변경 되었습니다. (현재 : {value})"},"attr":"sensor.power.usageTime","isPush":false,"pushType":"device","category":"센서"},{"push":{"type":"value","message":"스마트후드의 Fan Speed가 변경 되었습니다. (현재 : {value})"},"attr":"sensor.fan.fanSpeed","isPush":true,"pushType":"device","category":"제어"},{"push":{"enumList":{"off":"스마트후드 의 LED가 꺼졌습니다.","on":"스마트후드가 LED가 켜졌습니다."},"type":"enum"},"attr":"sensor.lamp.status","isPush":true,"pushType":"device","category":"제어"},{"attr":"sensor.filter.lifeTime","category":"센서","isPush":false,"pushType":"filter"},{"push":{"type":"event","message":"스마트후드의 필터 교체가 필요합니다."},"attr":"sensor.filter.usageTime","compare":"sensor.filter.lifeTime","isPush":false,"pushType":"filter","category":"센서"}],"activateAt":"2020-09-15T06:17:10.071Z","isConnected":true}]}
+2020-09-16 03:35:27 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803?group=deviceCategory&filter=CATEGORY_1 200 38ms 2.9kb
+2020-09-16 03:35:29 info:   <-- GET /
+2020-09-16 03:35:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:35:32 info:   <-- GET /
+2020-09-16 03:35:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:35:57 info:   <-- POST /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:35:57 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:57 info: addPlace start owner - 5f50b924b45e290019918510
+2020-09-16 03:35:57 debug: addPlace: 5f50b924b45e290019918510 - 장소 추가 요청 내역 {"ownerId":"5f50b924b45e290019918510","accessibles":["5f50b924b45e290019918510"],"placeName":"제주집"}
+2020-09-16 03:35:57 debug: GPS 0 - {"documents":[],"meta":{"is_end":true,"pageable_count":0,"total_count":0}}
+2020-09-16 03:35:57 debug: GPS 0 - {"documents":[{"address":{"address_name":"제주특별자치도 제주시 애월읍 애월리 1486-1","b_code":"5011025334","h_code":"5011025300","main_address_no":"1486","mountain_yn":"N","region_1depth_name":"제주특별자치도","region_2depth_name":"제 주시","region_3depth_h_name":"애월읍","region_3depth_name":"애월읍 애월리","sub_address_no":"1","x":"126.318192891858","y":"33.4613678714633"},"address_name":"제주특별자치도 제주시 애월읍 애월남길 5","address_type":"ROAD_ADDR","road_address":{"address_name":"제주특별자치도 제주시 애월읍 애월남길 5","building_name":"","main_building_no":"5","region_1depth_name":"제주특별자치도","region_2depth_name":"제주시","region_3depth_name":"애월읍 애월리","road_name":"애월남길","sub_building_no":"","underground_yn":"N","x":"126.318192891858","y":"33.4613678714633","zone_no":"63043"},"x":"126.318192891858","y":"33.4613678714633"}],"meta":{"is_end":true,"pageable_count":1,"total_count":1}}
+2020-09-16 03:35:57 debug: GPS 1 -  {"coordinates":[126.318192891858,33.4613678714633],"region_1depth":"제주특별자치도","region_2depth":"제주시","region_3depth":"애월읍 애월리","region_3depth_h":"애월읍"}
+2020-09-16 03:35:57 info: 049-037 of 5f61881da41b7b001afca384 was saved on REDIS.
+2020-09-16 03:35:57 info:   --> POST /api/v1/user/5f50b924b45e290019918510/place 200 368ms 658b
+2020-09-16 03:35:58 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-09-16 03:35:58 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:58 info:   --> GET /api/v1/board/lastestSequence/notice 200 9ms 21b
+2020-09-16 03:35:58 info:   <-- GET /api/v1/weather?placeId=5f61881da41b7b001afca384
+2020-09-16 03:35:58 info: getWeather place - 5f61881da41b7b001afca384
+2020-09-16 03:35:58 debug: http_weather Started!!!
+2020-09-16 03:35:58 info: Weather from DB - {"gsKey":"049-037","gsUTC":"2020-09-16T03:35:58.182Z","gsHigh":"26.0","gsLow":"21.0","gsCurr":"22.8","gsSky":2,"gsPM10":"-","gsPM25":"-"}
+2020-09-16 03:35:58 info:   --> GET /api/v1/weather?placeId=5f61881da41b7b001afca384 200 272ms 176b
+2020-09-16 03:35:59 info:   <-- GET /
+2020-09-16 03:35:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:02 info:   <-- GET /
+2020-09-16 03:36:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:27 info:   <-- POST /api/v1/auth/login
+2020-09-16 03:36:27 info: login start user - opendId - 2tXrQORcThPgx4ExLbqFFqPZNYn2 / google
+2020-09-16 03:36:27 debug: rdb queryString : SELECT json FROM tb_zin_users where appLogin_site = 'google' and appLogin_openId = '2tXrQORcThPgx4ExLbqFFqPZNYn2';
+2020-09-16 03:36:27 info: Encrypting.. {"appLogin":{"site":"google","openId":"2tXrQORcThPgx4ExLbqFFqPZNYn2","profileImage":"https://lh3.googleusercontent.com/-KTEWaXa9kYo/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclHNnHT2FxIUwr5Orv-eMW7iyyIGQ/s96-c/photo.jpg","email":"ziniottest@gmail.com"},"nickname":"TaeHee Lee","appVersion":"1.0.0","pushToken":["dClK6TLWSli9EEHouZ_NIA:APA91bGHqYmui6uWRu98G3AqEycXA37tpsjnXuRuHdW93pIlbeyoR-CBb7oicvIUDJbp3zSlGihcLM-nnLI6p_7uLmt6fp9Xv8D4OsXalWmmfPl8fz3sr85d3hx2Drg69JNutCfBwju3","fs95DCtvD08asW8GYBjMcx:APA91bEEzDRoKJ3jpJbtDiaxZLYg3MFdTXEatfuCWrp4VPvdjlZOWFYIsSRSyAqYxNj5t9z2Sbn37WnxmyE3pJZ6JR4yBmBuQkU1VSznEuG8zDpqvJbtn38ub0iVj89-Y-_qFhI6BmI_","f9XSoc8pgUqFkS9oIii7nm:APA91bHS46863fNdcV-XYjXWomaTX1-vMqUa_QhYSIS0Qj6DWPCpWYFfMFCCFzZSZP6N7CfLR3Xfw65FOxEr8Qs0MlVb-sNESD2wXyuhCxnxUHZvjIiwvWN1ZNSazH5gRhwUnI91agKx","fgWTZEvuD0ydvOszC5cp3a:APA91bGaxQkUas_Z4voiqygGUmo8Mzjac2VViqYmsjU5QFlTaDolmomOzd9iCoE3nJkYLsxcIkYvpfYwKU0gnuexFfHTziGlVwRDd8Nti9bzCsuMEnzcaWL46XEKNZ93fEKsdpJXYmDH","fYPBY-SsQ5ytY0ea84mW6r:APA91bH3jDqwXTO74MrnIAsKRNVxmJj5FJeeVbCUfaNRWWhvAAd9lsyAQYEaBGMoBmS0VUpCuSLM0-cvu0i5H12LpKoHe0V1axKI_2S1MS_dUKNWlhcZ6v1gVLOyLj2hjKHiq7gqAd-e","cmeHSEQ8QWGsH5cNOz7uNq:APA91bGvF-M_PKvMOF_13EAF_16oUt5unXQbQ3B8AkO0OAqM2hwoIHu9pF_uNQT_Wq3ioZ-8qJaftRHu6bKajvnadkCpxfquzDp7Bq-7QS9hOIvO1QbyuS7eNgV2bTeatGW3rMtkbmGg","ds6vMxG6Tiecd0jksO3zea:APA91bF2yLdmIgTLhQTZgoPAaIHV3_jl8tSaJE1ub1qBmxlHk4wvdneMTqStPZo0NAxtdr7hahsvPT9gCkxH7z49kmcBHmynN8T3LyL81_3tF6MVRFn-7kVVruOGvUku7NankxjVuyu8"],"userCode":"46694982","activatedAt":"2020-09-03T09:36:36.040Z","lastAccessedAt":"2020-09-16 12:36:27","status":"active","_id":"5f50b924b45e290019918510","cacheDate":"2020-09-15T14:07:14.364Z","tncInfo":{"agreedAt":"2020-09-03T09:36:38.702Z","tnc":[{"category":"service","rev":"2","version":"1.0"},{"category":"privacy","rev":"1","version":"1.0"},{"category":"marketing","rev":"1","version":"1.0"}]},"lastUpdatedAt":"2020-09-16 12:36:27","userId":"5f50b924b45e290019918510","push":{"enable":true,"nightMode":false,"homeSharing":false,"deviceEnable":["5f560b69c6d9230018717f1b","5f56fc3f595bdf001803db9f","5f589c9aa41b7b001afca308","5f589fbba41b7b001afca312","5f605c3a595bdf001803dc2c"],"deviceFilter":["5f560b69c6d9230018717f1b","5f589c9aa41b7b001afca308","5f589fbba41b7b001afca312","5f605c3a595bdf001803dc2c"]},"favorites":{"room":["5f51a8276773fa0018395808","5f560b69c6d9230018717f1b","5f589fbba41b7b001afca312"],"deviceCategory":["5f56fc3f595bdf001803db9f"]}}
+2020-09-16 03:36:27 debug: rdb queryString : UPDATE tb_zin_users SET appLogin_site='google', appLogin_openId='2tXrQORcThPgx4ExLbqFFqPZNYn2', appLogin_profileImage='https://lh3.googleusercontent.com/-KTEWaXa9kYo/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclHNnHT2FxIUwr5Orv-eMW7iyyIGQ/s96-c/photo.jpg', appLogin_email='ziniottest@gmail.com', nickname='TaeHee Lee', userCode='46694982', lastAccessedAt='2020-09-16 12:36:27', lastUpdatedAt='2020-09-16 12:36:27', status='active', json='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'WHERE _id='5f50b924b45e290019918510'
+2020-09-16 03:36:28 info:   --> POST /api/v1/auth/login 200 210ms 390b
+2020-09-16 03:36:28 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:36:28 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:36:28 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:28 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 14ms 3.33kb
+2020-09-16 03:36:28 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:28 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384 200 23ms 542b
+2020-09-16 03:36:28 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:28 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61881da41b7b001afca384 200 40ms 542b
+2020-09-16 03:36:29 info:   <-- GET /
+2020-09-16 03:36:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:32 info:   <-- GET /
+2020-09-16 03:36:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:34 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f56fb8ad086fa0019e7f4dd
+2020-09-16 03:36:34 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f56fb8ad086fa0019e7f4dd
+2020-09-16 03:36:34 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:34 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f56fb8ad086fa0019e7f4dd 200 21ms 547b
+2020-09-16 03:36:59 info:   <-- GET /
+2020-09-16 03:36:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:37:02 info:   <-- GET /
+2020-09-16 03:37:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:37:16 info:   <-- POST /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:37:16 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:37:16 info: addPlace start owner - 5f50b924b45e290019918510
+2020-09-16 03:37:16 debug: addPlace: 5f50b924b45e290019918510 - 장소 추가 요청 내역 {"ownerId":"5f50b924b45e290019918510","accessibles":["5f50b924b45e290019918510"],"placeName":"제주집2"}
+2020-09-16 03:37:16 debug: GPS 0 - {"documents":[],"meta":{"is_end":true,"pageable_count":0,"total_count":0}}
+2020-09-16 03:37:16 debug: GPS 0 - {"documents":[{"address":{"address_name":"제주특별자치도 제주시 우도면 연평리 904-1","b_code":"5011033021","h_code":"5011033000","main_address_no":"904","mountain_yn":"N","region_1depth_name":"제주특별자치도","region_2depth_name":"제주 시","region_3depth_h_name":"우도면","region_3depth_name":"우도면 연평리","sub_address_no":"1","x":"126.951016739939","y":"33.5194719510559"},"address_name":"제주특별자치도 제주시 우도면 삼양고수물길 1","address_type":"ROAD_ADDR","road_address":{"address_name":"제주특별자치도 제주시 우도면 삼양고수물길 1","building_name":"","main_building_no":"1","region_1depth_name":"제주특별자치도","region_2depth_name":"제주시","region_3depth_name":"우도면 연평리","road_name":"삼양고수물길","sub_building_no":"","underground_yn":"N","x":"126.951016739939","y":"33.5194719510559","zone_no":"63365"},"x":"126.951016739939","y":"33.5194719510559"}],"meta":{"is_end":true,"pageable_count":1,"total_count":1}}
+2020-09-16 03:37:16 debug: GPS 1 -  {"coordinates":[126.951016739939,33.5194719510559],"region_1depth":"제주특별자치도","region_2depth":"제주시","region_3depth":"우도면 연평리","region_3depth_h":"우도면"}
+2020-09-16 03:37:16 info: 060-038 of 5f61886ca41b7b001afca385 was saved on REDIS.
+2020-09-16 03:37:16 info:   --> POST /api/v1/user/5f50b924b45e290019918510/place 200 320ms 671b
+2020-09-16 03:37:17 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-09-16 03:37:17 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:37:17 info:   --> GET /api/v1/board/lastestSequence/notice 200 14ms 21b
+2020-09-16 03:37:17 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61886ca41b7b001afca385
+2020-09-16 03:37:17 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f61886ca41b7b001afca385
+2020-09-16 03:37:17 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:37:17 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61886ca41b7b001afca385 200 23ms 555b
+2020-09-16 03:37:29 info:   <-- GET /
+2020-09-16 03:37:29 info:   --> GET / 200 0ms 15b
+2020-09-16 03:37:32 info:   <-- GET /
+2020-09-16 03:37:32 info:   --> GET / 200 2ms 15b
+2020-09-16 03:37:59 info:   <-- GET /
+2020-09-16 03:37:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:02 info:   <-- GET /
+2020-09-16 03:38:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:29 info:   <-- GET /
+2020-09-16 03:38:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:32 info:   <-- GET /
+2020-09-16 03:38:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:59 info:   <-- GET /
+2020-09-16 03:38:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:02 info:   <-- GET /
+2020-09-16 03:39:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:29 info:   <-- GET /
+2020-09-16 03:39:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:32 info:   <-- GET /
+2020-09-16 03:39:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:59 info:   <-- GET /
+2020-09-16 03:39:59 info:   --> GET / 200 1ms 15b
+/usr/src/app #
+/usr/src/app # ^C
+/usr/src/app # command terminated with exit code 130
+ ✘ jys129  /mnt/c/Users/LGCNS  pod 7
+pod/zinfw-prod-api-6cdfd87d9c-xwq8j
+/usr/src/app #  cat ./logs/2020-09-16-results.log | grep "2020-09-16 03:3"
+2020-09-16 03:30:01 info:   <-- HEAD /
+2020-09-16 03:30:01 info:   --> HEAD / 200 1ms 15b
+2020-09-16 03:30:02 info:   <-- GET /
+2020-09-16 03:30:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:30:29 info:   <-- GET /
+2020-09-16 03:30:29 info:   --> GET / 200 3ms 15b
+2020-09-16 03:30:32 info:   <-- GET /
+2020-09-16 03:30:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:30:59 info:   <-- GET /
+2020-09-16 03:30:59 info:   --> GET / 200 0ms 15b
+2020-09-16 03:31:02 info:   <-- GET /
+2020-09-16 03:31:02 info:   --> GET / 200 2ms 15b
+2020-09-16 03:31:29 info:   <-- GET /
+2020-09-16 03:31:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:31:32 info:   <-- GET /
+2020-09-16 03:31:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:31:59 info:   <-- GET /
+2020-09-16 03:31:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:02 info:   <-- GET /
+2020-09-16 03:32:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:29 info:   <-- GET /
+2020-09-16 03:32:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:32 info:   <-- GET /
+2020-09-16 03:32:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:32:59 info:   <-- GET /
+2020-09-16 03:32:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:02 info:   <-- GET /
+2020-09-16 03:33:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:33:29 info:   <-- GET /
+2020-09-16 03:33:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:33:32 info:   <-- GET /
+2020-09-16 03:33:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:33:59 info:   <-- GET /
+2020-09-16 03:33:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:02 info:   <-- GET /
+2020-09-16 03:34:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:29 info:   <-- GET /
+2020-09-16 03:34:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:32 info:   <-- GET /
+2020-09-16 03:34:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:34:59 info:   <-- GET /
+2020-09-16 03:34:59 info:   --> GET / 200 0ms 15b
+2020-09-16 03:35:02 info:   <-- GET /
+2020-09-16 03:35:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:35:26 info:   <-- GET /api/v1/settings
+2020-09-16 03:35:26 info:   --> GET /api/v1/settings 200 27ms 1.02kb
+2020-09-16 03:35:26 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:35:26 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:35:26 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:26 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 13ms 2.86kb
+2020-09-16 03:35:26 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803
+2020-09-16 03:35:26 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f5161cd6773fa0018395803
+2020-09-16 03:35:26 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:27 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f5161cd6773fa0018395803 200 23ms 615b
+2020-09-16 03:35:27 info:   <-- GET /api/v1/weather?placeId=5f5161cd6773fa0018395803
+2020-09-16 03:35:27 info: getWeather place - 5f5161cd6773fa0018395803
+2020-09-16 03:35:27 debug: http_weather Started!!!
+2020-09-16 03:35:27 info: Weather from DB - {"gsKey":"057-127","gsUTC":"2020-09-16T03:35:26.912Z","gsHigh":"26.0","gsLow":"20.0","gsCurr":"25.1","gsSky":2,"gsPM10":"20","gsPM25":"17","cacheDate":"2020-09-16T03:35:27.144Z"}
+2020-09-16 03:35:27 info:   --> GET /api/v1/weather?placeId=5f5161cd6773fa0018395803 200 4ms 178b
+2020-09-16 03:35:29 info:   <-- GET /
+2020-09-16 03:35:29 info:   --> GET / 200 2ms 15b
+2020-09-16 03:35:32 info:   <-- GET /
+2020-09-16 03:35:32 info:   --> GET / 200 0ms 15b
+2020-09-16 03:35:57 info:   <-- GET /api/v1/settings
+2020-09-16 03:35:57 info:   --> GET /api/v1/settings 403 1ms 96b
+2020-09-16 03:35:58 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:35:58 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:35:58 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDE1MTMxNDg4OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDE1MTMxNH0.ipL0dMS1izWngxItPyEeUUim6nkZSXidHtY74LAuAfM
+2020-09-16 03:35:58 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 13ms 3.33kb
+2020-09-16 03:35:58 info:   <-- GET /api/v1/weather?placeId=5f61881da41b7b001afca384
+2020-09-16 03:35:58 info: getWeather place - 5f61881da41b7b001afca384
+2020-09-16 03:35:58 debug: http_weather Started!!!
+2020-09-16 03:35:58 info: Weather from DB - {"gsKey":"049-037","gsUTC":"2020-09-16T03:35:58.182Z","gsHigh":"26.0","gsLow":"21.0","gsCurr":"22.8","gsSky":2,"gsPM10":"-","gsPM25":"-","cacheDate":"2020-09-16T03:35:58.442Z"}
+2020-09-16 03:35:58 info:   --> GET /api/v1/weather?placeId=5f61881da41b7b001afca384 200 5ms 176b
+2020-09-16 03:35:59 info:   <-- GET /
+2020-09-16 03:35:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:02 info:   <-- GET /
+2020-09-16 03:36:02 info:   --> GET / 200 0ms 15b
+2020-09-16 03:36:28 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/tnc
+2020-09-16 03:36:28 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:28 debug: rdb queryString : SELECT json FROM tb_zin_users where _id = '5f50b924b45e290019918510';
+2020-09-16 03:36:28 info:   --> GET /api/v1/user/5f50b924b45e290019918510/tnc 200 52ms 377b
+2020-09-16 03:36:28 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-09-16 03:36:28 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:28 info:   --> GET /api/v1/board/lastestSequence/notice 200 9ms 21b
+2020-09-16 03:36:28 info:   <-- GET /api/v1/weather?placeId=5f61881da41b7b001afca384
+2020-09-16 03:36:28 info: getWeather place - 5f61881da41b7b001afca384
+2020-09-16 03:36:28 debug: http_weather Started!!!
+2020-09-16 03:36:28 info: Weather from DB - {"gsKey":"049-037","gsUTC":"2020-09-16T03:35:58.182Z","gsHigh":"26.0","gsLow":"21.0","gsCurr":"22.8","gsSky":2,"gsPM10":"-","gsPM25":"-","cacheDate":"2020-09-16T03:35:58.442Z"}
+2020-09-16 03:36:28 info:   --> GET /api/v1/weather?placeId=5f61881da41b7b001afca384 200 6ms 176b
+2020-09-16 03:36:29 info:   <-- GET /
+2020-09-16 03:36:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:33 info:   <-- GET /
+2020-09-16 03:36:33 info:   --> GET / 200 1ms 15b
+2020-09-16 03:36:34 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:36:34 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:36:34 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:36:34 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 12ms 3.33kb
+2020-09-16 03:36:59 info:   <-- GET /
+2020-09-16 03:36:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:37:02 info:   <-- GET /
+2020-09-16 03:37:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:37:16 info:   <-- GET /api/v1/settings
+2020-09-16 03:37:16 info:   --> GET /api/v1/settings 200 24ms 1.02kb
+2020-09-16 03:37:17 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place
+2020-09-16 03:37:17 info: listPlaces: started for user 5f50b924b45e290019918510.
+2020-09-16 03:37:17 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:37:17 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place 200 13ms 3.81kb
+2020-09-16 03:37:17 info:   <-- GET /api/v1/user/5f50b924b45e290019918510/place/5f61886ca41b7b001afca385
+2020-09-16 03:37:17 info: getPlaceInfo: 장소 정보 요청 사용자 - 5f50b924b45e290019918510, 장소 - 5f61886ca41b7b001afca385
+2020-09-16 03:37:17 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjUwYjkyNGI0NWUyOTAwMTk5MTg1MTAiLCJvYXV0aFNpdGUiOiJnb29nbGUiLCJsb2dpbkF0IjoiMTYwMDIyNzM4Nzg5OSIsIm5pY2tuYW1lIjoiVGFlSGVlIExlZSIsInN0YXR1cyI6ImFjdGl2ZSIsImlhdCI6MTYwMDIyNzM4N30.NtKOEHzA5S-T17CO6ce-O6EYUwlTh5Kwna0Md4irWYM
+2020-09-16 03:37:17 info:   --> GET /api/v1/user/5f50b924b45e290019918510/place/5f61886ca41b7b001afca385 200 22ms 555b
+2020-09-16 03:37:29 info:   <-- GET /
+2020-09-16 03:37:29 info:   --> GET / 200 0ms 15b
+2020-09-16 03:37:32 info:   <-- GET /
+2020-09-16 03:37:32 info:   --> GET / 200 2ms 15b
+2020-09-16 03:37:59 info:   <-- GET /
+2020-09-16 03:37:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:02 info:   <-- GET /
+2020-09-16 03:38:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:29 info:   <-- GET /
+2020-09-16 03:38:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:32 info:   <-- GET /
+2020-09-16 03:38:32 info:   --> GET / 200 1ms 15b
+2020-09-16 03:38:59 info:   <-- GET /
+2020-09-16 03:38:59 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:02 info:   <-- GET /
+2020-09-16 03:39:02 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:29 info:   <-- GET /
+2020-09-16 03:39:29 info:   --> GET / 200 1ms 15b
+2020-09-16 03:39:32 info:   <-- GET /

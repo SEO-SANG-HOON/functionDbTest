@@ -1,0 +1,13 @@
+{
+  "deviceId": "5f5048f75ec451001888d11e",
+  "sensor": {
+    "leftFront":{"power":{"powerLevel": "2"}}
+  }
+}
+
+{
+  "deviceId": "5f5048f75ec451001888d11e",
+  "sensor": {
+    "filter":{"lifeTime":120,"usageTime":140}
+  }
+}

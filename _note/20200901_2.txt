@@ -1,0 +1,51 @@
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo                                                                     [465/3478]
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 13ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 13ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 11ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 11ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 10ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 10ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 18ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:55 info:   --> GET /api/v1/board/lastestSequence/notice 200 9ms 21b
+2020-08-31 02:22:55 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:55 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:56 info:   --> GET /api/v1/board/lastestSequence/notice 200 12ms 21b
+2020-08-31 02:22:56 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:56 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:56 info:   --> GET /api/v1/board/lastestSequence/notice 200 13ms 21b
+2020-08-31 02:22:56 info:   <-- GET /api/v1/settings
+2020-08-31 02:22:56 info:   --> GET /api/v1/settings 200 19ms 923b
+2020-08-31 02:22:56 info:   <-- GET /api/v1/board/lastestSequence/notice
+2020-08-31 02:22:56 info: USER TOKEN eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZjNmNmFiZmQwNDBjMzAwMTg1Y2MxNjMiLCJvYXV0aFNpdGUiOiJuYXZlciIsImxvZ2luQXQiOiIxNTk4MjUwNTg2Mzc2Iiwibmlja25hbWUiOiLquajqs6Drnb3spZDri5jri5jri5jri5giLCJzdGF0dXMiOiJhY3RpdmUiLCJpYXQiOjE1
+OTgyNTA1ODZ9.anfdGqCk4KB5YbFN6q2HkrVOx5smv5g0l06-zq_JVAo
+2020-08-31 02:22:56 info:   --> GET /api/v1/board/lastestSequence/notice 200 12ms 21b
+2020-08-31 02:22:56 info:   <-- GET /api/v1/weather?placeId=5f3f6aead040c300185cc164
+2020-08-31 02:22:56 info: getWeather place - 5f3f6aead040c300185cc164
+2020-08-31 02:22:56 debug: http_weather Started!!!
+2020-08-31 02:22:56 info: Weather from DB - {"gsKey":"062-123","gsUTC":"2020-08-31T02:22:34.684Z","gsHigh":"31.0","gsLow":"23.0","gsCur
+r":"27","gsRain":"0","gsSky":"4","gsPM10":"17","gsPM25":"8","cacheDate":"2020-08-31T02:22:35.540Z"}
+2020-08-31 02:22:56 info:   --> GET /api/v1/weather?placeId=5f3f6aead040c300185cc164 200 5ms 190b
+2020-08-31 02:22:56 info:   <-- GET /api/v1/weather?placeId=5f3f6aead040c300185cc164
